@@ -1,0 +1,30 @@
+//META{"name":"Laxfany","description":"A transparent theme for the SNSD fam. Edited ver of ClearVision by Zerthox | Links: https://discord.gg/JTcF2M5 - SNSD Server | https://goo.gl/5J7vyV - SNSD Variety Index | https://discord.gg/ynaqc8s - Lax's Super Secret Pic Server","author":"Laxr","version":"3"}*//
+/*****************************************************************************
+Laxfany - SNSD Theme by Laxr
+Edited ver. of ClearVision by Zerthox with SmarterEmbeds by BeardDesign
+*****************************************************************************/
+@import url(https://gitcdn.xyz/repo/Laxrous/Laxfany/master/Laxfany.css);
+/****************************************************************************/
+
+:root {
+    /* Colors */
+    --main-color: #cf669c;
+    --hover-color: #6699ff;
+    
+    /* Pictures */
+    --background: url(https://i.imgur.com/edcva7Q.jpg);
+    --user-popout: url(https://i.imgur.com/eIGtoq7.jpg);
+    --profile: url(https://i.imgur.com/Nr9mICC.jpg);
+    --settings: url(https://i.imgur.com/OnG1Xcp.png);
+    /* If you need Images, check my server pins for presets */
+
+    /* Emoji Size */
+    --emoji-size: 40px;
+}
+
+/*****************************************************************************
+Links:
+SNSD Server - https://discord.gg/JTcF2M5
+SNSD Variety Index - https://goo.gl/5J7vyV
+Lax's Super Secret Pic Server - https://discord.gg/ynaqc8s
+****************************************************************************/

@@ -51,7 +51,6 @@ a,
     -webkit-transition: text-shadow .1s ease-in-out;
     transition: text-shadow .1s ease-in-out;
 }
-
 a:hover,
 .mention:hover,
 .chat .user-name:hover,
@@ -76,7 +75,6 @@ a:hover,
     text-decoration: none;
     text-shadow: 0 0 1px;
 }
-
 /**/
 .callout-backdrop {
     background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), var(--background)!important;
@@ -125,10 +123,7 @@ a:hover,
     color: transparent;
     background-color: var(--main-color);
 }
-
-#bd-pub-button {
-    text-transform: uppercase;
-}
+#bd-pub-button { text-transform: uppercase }
 #bd-pub-button:hover {
     background-color: var(--main-color) !important;
     -webkit-transition: all .3s ease-in-out;

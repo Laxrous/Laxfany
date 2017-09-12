@@ -1,5 +1,5 @@
 /*****************************************************************************
-Laxfany - SNSD Theme v3.12 by Laxr
+Laxfany - SNSD Theme v3.14 by Laxr
 Edited ver. of ClearVision by Zerthox with SmarterEmbeds by BeardDesign
 *****************************************************************************/
 body::after,
@@ -97,19 +97,24 @@ a:hover,
 
 /* Hover Label */
 /* like when you hover over server icon */
-.tooltip.tooltip-brand {
+.tooltip.tooltip-brand,
+.tooltip.tooltip-black {
     background-color: var(--main-color);
 }
-.tooltip.tooltip-brand.tooltip-left:after {
+.tooltip.tooltip-brand.tooltip-left:after,
+.tooltip.tooltip-black.tooltip-left:after{
     border-left-color: var(--main-color);
 }
-.tooltip.tooltip-brand.tooltip-right:after {
+.tooltip.tooltip-brand.tooltip-right:after,
+.tooltip.tooltip-black.tooltip-right:after {
     border-right-color: var(--main-color);
 }
-.tooltip.tooltip-brand.tooltip-bottom:after{
+.tooltip.tooltip-brand.tooltip-bottom:after,
+.tooltip.tooltip-black.tooltip-bottom:after {
     border-bottom-color: var(--main-color);
 }
-.tooltip.tooltip-brand.tooltip-top:after{
+.tooltip.tooltip-brand.tooltip-top:after,
+.tooltip.tooltip-black.tooltip-top:after {
     border-top-color: var(--main-color);
 }
 
@@ -1293,8 +1298,16 @@ textarea {
 .reaction:hover .reaction-count {
     color: rgba( 255, 255, 255, .5) !important;
 }
-
-
+/*** NSFW ***/
+.justifyCenter-29N31w {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: rgba(0,0,0,.75);
+}
+.horizontal-2BEEBe.justifyCenter-29N31w.alignStretch-1hwxMa {
+    background: rgba(0,0,0,.75);
+}
 
 /******* Members List Area ******/
 .theme-dark .channel-members {

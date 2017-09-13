@@ -1299,13 +1299,7 @@ textarea {
     color: rgba( 255, 255, 255, .5) !important;
 }
 /*** NSFW ***/
-.justifyCenter-29N31w {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background: rgba(0,0,0,.75);
-}
-.horizontal-2BEEBe.justifyCenter-29N31w.alignStretch-1hwxMa {
+.flex-lFgbSz.flex-3B1Tl4.horizontal-2BEEBe.horizontal-2VE-Fw.flex-3B1Tl4.directionRow-yNbSvJ.justifyCenter-29N31w.alignStretch-1hwxMa.noWrap-v6g9vO{
     background: rgba(0,0,0,.75);
 }
 
@@ -1730,11 +1724,13 @@ textarea {
     background-color: var(--hover-color);
 }
 /* Help Button */
-.need-help-modal .footer {
+.need-help-modal .footer,
+.need-help-modal.deprecated .footer {
     background-color: rgba(0, 0, 0, 0.88);
     border-top: none;
 }
-.need-help-modal .header {
+.need-help-modal .header,
+.need-help-modal.deprecated .header {
     background-color: var(--main-color);
 }
 .need-help-button:hover {
@@ -1747,14 +1743,22 @@ textarea {
 .need-help-button {
     visibility: hidden;
 }
-.need-help-modal .header input[type=text] {
-    -webkit-box-shadow: 0 2px 1px var(--main-color);
-    box-shadow: 0 2px 1px var(--main-color);
+.need-help-modal .header input[type=text],
+.need-help-modal.deprecated .header input[type=text] {
+    -webkit-box-shadow: 0 2px 1px var(--hover-color);
+    box-shadow: 0 2px 1px var(--hover-color);
     border: none;
+}
+.need-help-modal .header.control-group input[type="text"]::-webkit-input-placeholder {
+    color: #fff;
 }
 .need-help-modal .header input[type=text]:focus {
     background-color: rgba(0, 0, 0, .5);
     border: none;
+}
+.need-help-modal a,
+.need-help-modal.deprecated a {
+    color: var(--main-color);
 }
 /**** Channel Search ****/
 .search .search-bar {

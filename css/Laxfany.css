@@ -1395,29 +1395,21 @@ textarea {
 .bodyTitleIconForeground-itKW-t {
     fill: transparent;
 }
-.body-3rkFrF > div:nth-child(1) > div{
-    color: transparent;
-    cursor: default;
+.body-3rkFrF .name-2ZHm1Q {
+    color: var(--main-color);
 }
-.body-3rkFrF > div:nth-child(3) {
+.body-3rkFrF .details-3Qyqn3 {
+    color: #fff;
+}
+.body-3rkFrF .contentImages-ZJxjQm.content-3AMrS-.contentSmall-3Or8WV > div:nth-child(3) > span {
+    color: #ccc;
+}
+.body-3rkFrF > div:nth-child(1) > div.flex-lFgbSz.flex-3B1Tl4.horizontal-2BEEBe.horizontal-2VE-Fw.flex-3B1Tl4.directionRow-yNbSvJ.justifyStart-2yIZo0.alignStretch-1hwxMa.noWrap-v6g9vO.marginBottom8-1mABJ4,
+.body-3rkFrF > div:nth-child(3),
+.body-3rkFrF > div:nth-child(5),
+.body-3rkFrF .bodyTitleText-hSiL7d,
+.body-3rkFrF .bodyDivider-3OPnU2 {
     display: none;
-}
-/*
-.userPopout-4pfA0d::before {
-    background: var(--user-popout);
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}*/
-.header-3mZJcV {
-    padding: 10px 10px 45px;
 }
 .body-3rkFrF {
     padding-bottom: 0px;
@@ -1455,13 +1447,6 @@ textarea {
     font-weight: 700;
     text-shadow: 0 0 1px rgba(0, 0, 0, .3);
 }
-/* I don't know what this is anymore 
-.user-popout .body .section .label {
-    color: #A7A7A7;
-}
-.user-popout .footer .update-notice {
-    color: #A0A0A0;
-}*/
 .userPopout-4pfA0d .headerStreaming-3F-wjT {
     background-color: rgba(0,0,0,.65);
 }

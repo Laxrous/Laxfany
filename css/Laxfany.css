@@ -1,5 +1,5 @@
 /*****************************************************************************
-Laxfany - SNSD Theme v3.14 by Laxr
+Laxfany - SNSD Theme v3.15 by Laxr
 Edited ver. of ClearVision by Zerthox with SmarterEmbeds by BeardDesign
 *****************************************************************************/
 body::after,
@@ -377,6 +377,22 @@ a:hover,
 }
 .guild-channels ul .channel:not(.selected):hover {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
+}
+.unread-2TDDFN {
+    background-color: rgba(114, 118, 126, 0.7);
+}
+.unreadBottom-2LxhSR {
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.unreadTop-25fmEL {
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.auth-inner .auth-brand {
+    background: rgba(40,43,48,.75);
 }
 
 /* Server Popout & Status Picker */

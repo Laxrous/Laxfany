@@ -316,7 +316,10 @@ a:hover,
     width: 12px;
     height: 12px;
 }
-.containerDefault-1bbItS {
+.containerDefault-1bbItS,
+.containerDragAfter-3O-noP,
+.containerDragBefore-2hcouM,
+.containerUserOver-3O3u5c {
     padding-top: 2px;
 }
 .nameCollapsed-3_ChMu,
@@ -599,6 +602,14 @@ a:hover,
     width: 80%;
     height: 100%;
     z-index: 1;
+}
+.listCollapse-z8PceY .avatarDefault-3jtQoc,
+.listCollapse-z8PceY .avatarSpeaking-3teDH6 {
+    position: relative;
+}
+.contentHoveredVoice-3qGNKh:active,
+.contentSelectedVoice-gTtYM9:active {
+    background: rgba(255,255,255,.07);
 }
 /* Voice Connection Info Popout */
 .popout header {
@@ -2789,6 +2800,12 @@ button.win-close:hover {
 }
 .bd-minimal .status-picker {
     width: 156px;
+}
+.bd-minimal .avatar-large {
+    margin-right: 10px;
+}
+.bd-minimal .theme-dark .comment {
+    border-left: 2px solid transparent;
 }
 /*Custom CSS */
 .ui-standard-sidebar-view #editor-detached button {

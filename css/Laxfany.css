@@ -801,6 +801,9 @@ a:hover,
 .content .flex-spacer {
     background: rgba(0, 0, 0, 0.75)
 }
+.chat .message-group {
+    padding: 10px 0;
+}
 .avatar-large {
     left: 8px;
     border-radius: 5px;

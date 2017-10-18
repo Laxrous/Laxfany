@@ -76,11 +76,14 @@ a:hover,
     text-shadow: 0 0 1px;
 }
 /**/
-.callout-backdrop {
+.callout-backdrop, /* remove */
+.backdrop-2ohBEd {
     background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), var(--background)!important;
     background-size: cover !important;
 }
 .app,
+.appMount-14L89u,
+.container-2OU7Cz,
 .layers, .theme-dark .layer, .theme-dark .layers,
 .theme-light .layer, .theme-light .layers,
 .chat,
@@ -93,6 +96,11 @@ a:hover,
 #rtc-connection,
 #friends {
     background: transparent !important;
+}
+.titleBar-3_fDwJ {
+    background:
+        linear-gradient(to bottom, rgba(0,0,0,.9)5%,rgba(0,0,0,.75)),
+        linear-gradient(to right,rgba(0,0,0,.5)25px,rgba(0,0,0,0)70px);
 }
 
 /* Hover Label */
@@ -121,8 +129,7 @@ a:hover,
 
 /******** Server List *******/
 .guilds-wrapper {
-    background: linear-gradient(to right,rgba(0, 0, 0, 0.9),rgba(0,0,0,.75)),
-        linear-gradient(to bottom,rgba(0,0,0,.9) 0%,rgba(0,0,0,.0) 5.5%)!important;
+    background: linear-gradient(to right,rgba(0, 0, 0, .9)20px,rgba(0,0,0,.75));
 }
 .guilds .friends-icon:hover {
     color: transparent;
@@ -298,8 +305,9 @@ a:hover,
 
 /******* Channel List Area ********/
 .header-1tSljs {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9),rgba(0,0,0,.0));
+    background: transparent;
     border-bottom: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 .name-3gtcmp {
@@ -308,8 +316,10 @@ a:hover,
     color: var(--main-color);
     font-size: 25px;
 }
-.channels-wrap {
+.channels-wrap, /* remove this later */
+.channels-3g2vYe {
     background: rgba(0, 0, 0, 0.75);
+    border-radius: 0;
     width: 220px;
 }
 .icon-3tVJnl {
@@ -354,7 +364,8 @@ a:hover,
 .nameHoveredText-2FFqiz {
     color: #fff;
 }
-.content-2mSKOj {
+.content-2mSKOj,
+.base-3AoPqv {
     border-radius: 0;
 }
 .wrapperSelectedText-31jJa8:before,
@@ -786,9 +797,12 @@ a:hover,
 
 /********* Chat *********/
 /* Header */
-.title-wrap {
-    border-bottom: 0 !important;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .98),rgba(0,0,0,.75))!important;
+.title-wrap, /* remove */
+.theme-dark .title-qAcLxz {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 0 !important; /* remove */
+    background: rgba(0, 0, 0, 0.75);
 }
 .chat>.title-wrap>.title .channel-name {
     color: #BFBFBF;
@@ -928,6 +942,7 @@ a:hover,
 }
 .chat form,
 .theme-dark .chat form {
+    background-color: transparent;
     border-top: none;
 }
 .small-popout-box {

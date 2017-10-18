@@ -2010,7 +2010,7 @@ button.win-close:hover {
 /* Buttons */
 .theme-dark #friends .friends-header,
 .friends-header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.98),rgba(0,0,0,.75));
+    background: rgba(0,0,0,.75);
     border: none!important;
 }
 #friends .btn,
@@ -2048,7 +2048,7 @@ button.win-close:hover {
 }
 /* Search Bar */
 .private-channels .search-bar {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9),rgba(0,0,0,.0));
+    background: transparent;
     border-bottom:0;
     -webkit-box-shadow: none;
     box-shadow: none;

@@ -129,7 +129,7 @@ a:hover,
 
 /******** Server List *******/
 .guilds-wrapper {
-    background: linear-gradient(to right,rgba(0, 0, 0, .9)20px,rgba(0,0,0,.75));
+    background: linear-gradient(to right,rgba(0, 0, 0, .9),rgba(50,50,50,.7));
 }
 .guilds .friends-icon:hover {
     color: transparent;
@@ -1156,11 +1156,11 @@ textarea {
 .theme-light .divider-2JwdCF {
     background-color: #222;
 }
-.theme-light .contentTitle-sL6DrN strong,
-.theme-light .content-249Pr9,
-.theme-light .selectorSelected-2M0IGv .description-YnaVYa,
-.theme-light .selectorSelected-2M0IGv .descriptionUsername-1quCGz,
-.theme-light .selectorSelected-2M0IGv .descriptionDiscriminator-3KCIMj {
+.theme-brand .content-249Pr9,
+.theme-brand .contentTitle-sL6DrN,
+.theme-brand .description-YnaVYa,
+.theme-brand .descriptionUsername-1quCGz,
+.theme-brand .descriptionDiscriminator-3KCIMj {
     color: #fff;
 }
 
@@ -2903,8 +2903,7 @@ span#pubslayerroot .sidebar-region .scroller-wrap{
     opacity:1;
 }
 .theme-light .title-wrap {
-    background:
-        linear-gradient(to bottom, rgba(0, 0, 0, .95),rgba(50,50,50,.7))!important;
+    background: rgba(50,50,50,.7));
     -webkit-box-shadow: none;
     box-shadow: none;
 }

@@ -798,7 +798,8 @@ a:hover,
 /********* Chat *********/
 /* Header */
 .title-wrap, /* remove */
-.theme-dark .title-qAcLxz {
+.theme-dark .title-qAcLxz,
+.theme-light .title-qAcLxz {
     -webkit-box-shadow: none;
     box-shadow: none;
     border-bottom: 0 !important; /* remove */
@@ -2008,28 +2009,25 @@ button.win-close:hover {
 
 /*** Friends Area ***/
 /* Buttons */
-.theme-dark #friends .friends-header,
-.friends-header {
+.theme-dark .headerBar-cxbhPD,
+.theme-light .headerBar-cxbhPD{
     background: rgba(0,0,0,.75);
-    border: none!important;
+    -webkit-box-shadow: none;
+	box-shadow: none;
 }
 #friends .btn,
 .add-friend-popout .btn,
 .private-channels .channel.selected .icon-friends,
-#friends .friends-header .tab-bar .tab-bar-item.selected,
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
+#friends .tab-bar .tab-bar-item.selected,
+.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary {
     background-color: var(--main-color)!important;
 }
-#friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected),
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected),
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
+#friends .tab-bar .tab-bar-item:hover:not(.selected),
+.theme-dark #friends .tab-bar .tab-bar-item:hover:not(.selected),
+.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
     background-color: var(--hover-color)!important;
 }
-#friends .friends-header .tab-bar .tab-bar-item.selected {
-    color: #fff !important;
-}
-#friends .friends-header .tab-bar .tab-bar-item .badge {
-    background-color: var(--main-color) !important;
+#friends .tab-bar .tab-bar-item.selected {
     color: #fff !important;
 }
 .theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action,
@@ -3003,13 +3001,7 @@ span#pubslayerroot .sidebar-region .scroller-wrap{
 .theme-light .channel-members .avatar-small .status {
     border-color: #2e3136;
 }
-.theme-light #friends .friends-header,
-.theme-light .friends-header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.98),rgba(50,50,50,.7));
-    border: none!important;
-    box-shadow: none;
-}
-.theme-light #friends .friends-header .tab-bar .tab-bar-separator,
+.theme-light #friends .tab-bar .tab-bar-separator,
 .theme-light #friends .friends-table .friends-table-header .friends-column-separator {
     background-color: hsla(0,0%,100%,.1);
 }

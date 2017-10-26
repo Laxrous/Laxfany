@@ -595,10 +595,13 @@ a:hover,
 .avatarSpeaking-3teDH6 {
     top: 4px;
     position: absolute;
-    box-shadow: none;
     border-radius: 3px;
     z-index: 2;
     left: 0px;
+}
+.avatarSpeaking-3teDH6 {
+    -webkit-box-shadow: -3.5px 0 0 0 var(--main-color);
+    box-shadow: -3.5px 0 0 0 var(--main-color);
 }
 .nameHovered-28u_Fz,
 .nameDefault-1I0lx8 {

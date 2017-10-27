@@ -409,7 +409,7 @@ a:hover,
     padding: 0 2px 0;
 }
 .popout-menu:not(.status-picker) {
-    padding: 56px 2px 0;
+    padding: 0 2px 0;
 }
 .popout-menu .popout-menu-item {
     color: #ddd;
@@ -2630,11 +2630,11 @@ button.win-close:hover {
     background-color: rgba(0, 0, 0, 0.9);
     color: #a3a3a3;
 }
-.popout.popout-bottom[style*="top: 56px;"] {
+/*.popout.popout-bottom[style*="top: 56px;"] {
     top: 0px !important;
     margin-top: 0px;
     z-index: 1!important;
-}
+}*/
 .markdown-modal .markdown-modal-header,
 .markdown-modal .markdown-modal-footer {
     background-color: transparent;

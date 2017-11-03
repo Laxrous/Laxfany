@@ -105,6 +105,10 @@ a:hover,
 .typeWindows-15E0Ys {
     margin: 0;
 }
+.typeWindows-15E0Ys .wordmark-2L03Wr path {
+    d: none;
+    fill: none;
+}
 
 /* Hover Label */
 /* like when you hover over server icon */

@@ -323,6 +323,12 @@ a:hover,
     color: var(--main-color);
     font-size: 25px;
 }
+.container-3NvGrL.popout-open {
+    background: rgba(0, 0, 0, .9);
+}
+.container-3NvGrL:hover .header-1tSljs svg g path[stroke*="#FFF"] {
+    stroke: var(--hover-color) !important;
+}
 .channels-wrap, /* remove this later */
 .channels-3g2vYe {
     background: rgba(0, 0, 0, 0.75);
@@ -2634,11 +2640,10 @@ button.win-close:hover {
     background-color: rgba(0, 0, 0, 0.9);
     color: #a3a3a3;
 }
-/*.popout.popout-bottom[style*="top: 56px;"] {
-    top: 0px !important;
-    margin-top: 0px;
-    z-index: 1!important;
-}*/
+.popout.popout-bottom[style*="z-index: 1000; overflow: hidden; visibility: visible; left: 180px;"] {
+    /* server title context menu */
+    top: 30px !important;
+}
 .markdown-modal .markdown-modal-header,
 .markdown-modal .markdown-modal-footer {
     background-color: transparent;

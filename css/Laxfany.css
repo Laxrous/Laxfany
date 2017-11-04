@@ -2642,7 +2642,7 @@ button.win-close:hover {
 }
 .popout.popout-bottom[style*="z-index: 1000; overflow: hidden; visibility: visible; left: 180px;"] {
     /* server title context menu */
-    top: 30px !important;
+    top: 50px !important;
 }
 .markdown-modal .markdown-modal-header,
 .markdown-modal .markdown-modal-footer {

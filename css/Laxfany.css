@@ -109,6 +109,11 @@ a:hover,
     d: none;
     fill: none;
 }
+.theme-dark .noChannel-2EQ0a9,
+.theme-light .noChannel-2EQ0a9{
+    background: rgba(0,0,0,.75);
+}
+
 
 /* Hover Label */
 /* like when you hover over server icon */
@@ -2880,6 +2885,46 @@ span#pubslayerroot .sidebar-region .scroller-wrap{
 
 
 /* Light Theme */
+/* stop using light theme */
+.theme-light .container-2OU7Cz::before {
+    content: "";
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    pointer-events: none;
+	background-color: rgba(0, 0, 0, .8);
+}
+.theme-light .container-2OU7Cz::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 999;
+    pointer-events: none;
+    content: "Please turn on Dark Theme \a"
+        "in the Appearance Settings. \a"
+        "I no longer want to fix Light Theme :p \a"
+        "Do it to make this message disappear";
+    top: 50%;
+    margin-top: -50px;
+    line-height: 50px;
+    white-space: pre;
+    opacity: .7;
+}
+.theme-light .container-iksrDt {
+    z-index: 999;
+}
+
+
 .theme-light .guilds-wrapper {
     background:
         linear-gradient(to right, rgba(0,0,0,.9), rgba(50,50,50,.7)),

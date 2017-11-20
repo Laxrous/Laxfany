@@ -10,7 +10,7 @@ body::after,
 .radio-theme.light label,
 .radio-theme.dark label{
     background-image: var(--background) !important;
-    background-position: top;
+    background-position: var(--background-position);
 }
 body {
     -webkit-backface-visibility: hidden;

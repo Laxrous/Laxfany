@@ -1015,6 +1015,16 @@ textarea {
 .theme-dark .attachButtonDivider-3tknGJ {
     background-color: transparent;
 }
+/* Attachments Button */
+.theme-dark .attachPopout-gjwHsr {
+    background: rgba(0, 0, 0, .9);
+}
+.theme-dark .attachPopoutRow-elxASe {
+    transition:none;
+}
+.theme-dark .attachPopoutRow-elxASe:hover {
+    background-color: var(--hover-color);
+}
 /* New Messages/Date Divider */
 .theme-dark .friends-table .messages .divider.divider-red>div,
 .theme-dark .messages-wrapper .messages .divider.divider-red>div,
@@ -1220,6 +1230,11 @@ textarea {
 .theme-dark .message-group a {
     color: var(--main-color);
 }
+/* Failed message */
+.theme-dark .message-group .comment .message-send-failed .markup,
+.theme-dark .message-group .comment .message-send-failed a {
+    color: #f04747 !important;
+}
 /*** Emoji ***/
 .emoji,
 .emoji.jumboable {
@@ -1367,6 +1382,9 @@ textarea {
 }
 
 /******* Members List Area ******/
+.channel-members-loading {
+    display: none;
+}
 .theme-dark .channel-members {
     background: rgba(0, 0, 0, 0.75);
 }
@@ -2338,28 +2356,27 @@ button.win-close:hover {
 .theme-light .ui-select .Select-control:hover {
     border-color: var(--hover-color);
 }
-.theme-dark .ui-select .Select-menu-outer,
-.theme-light .ui-select .Select-menu-outer {
-    border-color: #202225;
-    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+.theme-dark .ui-select>.Select .Select-menu-outer,
+.theme-light .ui-select>.Select .Select-menu-outer {
     background-color: #000;
     border-color: var(--main-color);
     border-top: 0;
     margin: 0;
 }
-.theme-dark .ui-select .Select-option,
-.theme-light .ui-select .Select-option {
-    color: #C5C5C5;
+.theme-dark .ui-select>.Select .Select-option,
+.theme-light .ui-select>.Select .Select-option {
+    background-color: transparent;
+    color: #f6f6f7;
     overflow: hidden;
     margin: 3px;
 }
-.theme-dark .ui-select .Select-option.is-selected,
-.theme-light .ui-select .Select-option.is-selected {
+.theme-dark .ui-select>.Select .Select-option.is-selected,
+.theme-light .ui-select>.Select .Select-option.is-selected {
     background: var(--main-color);
     color: #fff;
 }
-.theme-dark .ui-select .Select-option:hover,
-.theme-light .ui-select .Select-option:hover {
+.theme-dark .ui-select>.Select .Select-option:hover,
+.theme-light .ui-select>.Select .Select-option:hover {
     background: var(--hover-color);
     color: #fff;
 }
@@ -2531,6 +2548,7 @@ button.win-close:hover {
 .theme-light .scrollerWrap-2uBjct .scroller-fzNley::-webkit-scrollbar-thumb,
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb,
 .bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
+.theme-dark .ui-select>.Select .Select-menu::-webkit-scrollbar-thumb,
 .bda-dark #pubs-container .scroller::-webkit-scrollbar-thumb,
 .bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb,
 #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb,
@@ -2542,6 +2560,7 @@ button.win-close:hover {
     border: 3px solid rgba(0, 0, 0, 0.2)!important;
     background: rgba(255, 255, 255, 0.1)!important;
 }
+.theme-dark .ui-select>.Select .Select-menu::-webkit-scrollbar-track-piece,
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-track-piece,
 .bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece,
 .bda-dark #pubs-container .scroller::-webkit-scrollbar-track-piece,

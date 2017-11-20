@@ -80,6 +80,7 @@ a:hover,
 .backdrop-2ohBEd {
     background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), var(--background)!important;
     background-size: cover !important;
+    background-position: var(--background-position) !important;
 }
 .app,
 .appMount-14L89u,

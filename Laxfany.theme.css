@@ -18,8 +18,10 @@ Edited ver. of ClearVision by Zerthox with SmarterEmbeds by BeardDesign
     --settings: url(https://i.imgur.com/OnG1Xcp.png);
     /* If you need Images, check my server pins for presets */
 
+    /* Main Background Position */
+    --background-position: top;
     /* Emoji Size */
-    --emoji-size: 40px;
+    --emoji-size: 30px;
 }
 
 /*****************************************************************************

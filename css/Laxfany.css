@@ -106,6 +106,7 @@ a:hover,
 .typeWindows-15E0Ys {
     margin: 0;
 }
+.wordmark-2L03Wr {display: none;}
 .typeWindows-15E0Ys .wordmark-2L03Wr path {
     d: none;
     fill: none;
@@ -1468,8 +1469,12 @@ textarea {
 }
 .headerNormal-1cioxU,
 .body-3rkFrF,
-.footer-2J5zqP {
-    background: transparent;
+.footer-2J5zqP, /*might need to remove */
+.headerPlaying-2eYqm9,
+.theme-dark .headerNormal-1cioxU,
+.theme-dark .body-3rkFrF,
+.theme-dark .footer-2J5zqP {
+    background-color: transparent;
 }
 .headerTag-3zin_i.marginBottom8-1mABJ4 {
     margin-bottom:0;
@@ -1660,6 +1665,108 @@ textarea {
 #user-profile-modal .guilds .guild:hover .status {
     border-color: #282b30;
 }
+
+
+/*** New Profiles ***/
+.topSectionNormal-2LlRG1,
+.theme-dark .body-3_tdh6,
+.topSectionPlaying-3jAH9b {
+    background: rgba(0, 0, 0, 0.9);
+}
+/* header */
+.header-2Lg0Oe {
+    background: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.9)),var(--profile);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.headerInfo-Gkqcz9 {
+    position: relative;
+    top: 25px; 
+}
+.header-2Lg0Oe .username {
+    color: #fff;
+}
+.header-2LgOOe .nameTag-2n-N0D {max-width: 225px; }
+.topSectionPlaying-3jAH9b .activity-1Sr8Y2 {
+    padding: 20px 40px 0;
+    min-height: 114px;
+}
+.topSectionPlaying-3jAH9b .buttonBrandInverted-VFL7Yc {
+    background: none;
+    position: absolute;
+    color: hsla(0,0%,100%,.6);
+    top: 286px;
+    right: 30px;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+}
+.topSectionNormal-2LlRG1 .buttonGreenFilled-6QHNrw {
+    background: none;
+    position: absolute;
+    color: hsla(0,0%,100%,.6);
+    top: 152px;
+    right: 30px;
+    height: 52px;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+}
+.header-2Lg0Oe .buttonBrandInverted-VFL7Yc:hover,
+.header-2Lg0Oe .buttonGreenFilled-6QHNrw:hover {
+    color: var(--hover-color);
+    background: none;
+	border-bottom-color: var(--hover-color);
+}
+.header-2Lg0Oe .mediumGrow-uovsMu {
+    min-height: 52px;
+    min-width: 85px;
+}
+.header-2Lg0Oe .maskProfile-MeBve8 {-webkit-mask-box-image-source: var(--profile);}
+.header-2Lg0Oe .image-EVRGPw { position: relative; top: 25px; border-radius: 15px;}
+.header-2Lg0Oe .statusProfile-29OBzn {
+	bottom: -33px;
+    right: -8px;
+    border: 2px solid;
+}
+/* body */
+.theme-dark .body-3_tdh6 {
+    min-height: 341px;
+}
+.tab-bar.tabBar-2z50ux .tabBarItem-1Lg555.selected {
+    color: var(--main-color);
+    border-bottom-color: var(--main-color);
+}
+.tab-bar.tabBar-2z50ux .tabBarItem-1Lg555:hover {
+    color: var(--hover-color);
+    border-bottom-color: var(--hover-color);
+}
+.tabBarContainer-3RVZc-,
+.userInfoSection-2WJxMm+.userInfoSection-2WJxMm { border-top: 0; }
+.header-2Lg0Oe .button-2t3of8 {padding: 0; }
+.connectedAccount-3mKaTA {
+    background-color: hsla(0, 0%, 100%, 0.04);
+    border: 0;
+}
+.theme-dark .activityProfile-2pymp0 .headerText-2CVBxK {
+    color: var(--main-color);
+}
+.theme-dark .activityProfile-2pymp0 .headerIconForeground-2QFL0Z {
+    fill: var(--main-color);
+}
+.theme-dark .listRow-1wEi-U:hover {
+    background: linear-gradient(to right, var(--main-color), transparent);
+    color: #fff;
+}
+.theme-dark .listRow-1wEi-U,
+.theme-dark .listRow-1wEi-U .username {
+    color: var(--main-color);
+}
+.theme-dark .listRow-1wEi-U:hover .username,
+.theme-dark .listRow-1wEi-U .guildNick-1oZKE3,
+.theme-dark .listRow-1wEi-U .listDiscriminator-yFeQU-{
+    color: #fff;
+}
+
 
 
 /*** Right Clicking User / Context Menu ***/

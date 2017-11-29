@@ -1467,6 +1467,7 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
 }
+.headerNormal-1cioxU { background: transparent; }
 .headerNormal-1cioxU,
 .body-3rkFrF,
 .footer-2J5zqP, /*might need to remove */
@@ -1534,8 +1535,9 @@ textarea {
     font-weight: 700;
     text-shadow: 0 0 1px rgba(0, 0, 0, .3);
 }
+.userPopout-4pfA0d .activity-AFBUEw { background-color: transparent; }
 .userPopout-4pfA0d .headerStreaming-3F-wjT {
-    background-color: rgba(0,0,0,.65);
+    background-color: rgba(90, 55, 150, .5);
 }
 .userPopout-4pfA0d .headerLive-2dDMvp {
     background-color: rgba(90, 55, 150, .5);
@@ -1544,6 +1546,9 @@ textarea {
 }
 .userPopout-4pfA0d .headerLive-2dDMvp:hover {
     background-color: rgba(90, 55, 150, .7);
+}
+.userPopout-4pfA0d .activityUserPopout-1nmgaw .headerText-2CVBxK {
+    color: var(--main-color);
 }
 .userPopout-4pfA0d .note textarea {
     padding: 0;
@@ -1750,9 +1755,9 @@ textarea {
 .theme-dark .activityProfile-2pymp0 .headerText-2CVBxK {
     color: var(--main-color);
 }
-.theme-dark .activityProfile-2pymp0 .headerIconForeground-2QFL0Z {
+/*.theme-dark .activityProfile-2pymp0 .headerIconForeground-2QFL0Z {
     fill: var(--main-color);
-}
+}*/
 .theme-dark .listRow-1wEi-U:hover {
     background: linear-gradient(to right, var(--main-color), transparent);
     color: #fff;

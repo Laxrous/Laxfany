@@ -1477,6 +1477,9 @@ textarea {
 .theme-dark .footer-2J5zqP {
     background-color: transparent;
 }
+.theme-dark .footer-2J5zqP {
+    border-color: transparent;
+}
 .headerTag-3zin_i.marginBottom8-1mABJ4 {
     margin-bottom:0;
 }
@@ -1701,7 +1704,7 @@ textarea {
     background: none;
     position: absolute;
     color: hsla(0,0%,100%,.6);
-    top: 286px;
+    top: 266px;
     right: 30px;
     border-bottom: 2px solid transparent;
     border-radius: 0;
@@ -1710,11 +1713,24 @@ textarea {
     background: none;
     position: absolute;
     color: hsla(0,0%,100%,.6);
-    top: 152px;
+    top: 132px;
     right: 30px;
     height: 52px;
     border-bottom: 2px solid transparent;
     border-radius: 0;
+}
+.topSectionStreaming-3rIBIm .buttonBrandInverted-VFL7Yc {
+    background: none;
+    position: absolute;
+    color: hsla(0,0%,100%,.6);
+    top: 229px;
+    right: 30px;
+    height: 52px;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+}
+.topSectionStreaming-3rIBIm {
+    background: rgba(90, 55, 150, .5);
 }
 .header-2Lg0Oe .buttonBrandInverted-VFL7Yc:hover,
 .header-2Lg0Oe .buttonGreenFilled-6QHNrw:hover {

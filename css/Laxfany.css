@@ -104,7 +104,7 @@ a:hover,
         linear-gradient(to right,rgba(0,0,0,.5)25px,rgba(0,0,0,0)70px);
 }
 .typeWindows-15E0Ys {
-    margin-top: 1px;
+    margin-top: 0;
 }
 .wordmark-2L03Wr {display: none;}
 .typeWindows-15E0Ys .wordmark-2L03Wr path {
@@ -2189,6 +2189,52 @@ button.win-maximize:hover,
 button.win-close:hover {
     background-color: var(--main-color);
     border-radius: 3px;
+}
+
+/*** LFG Area ***/
+.theme-dark .lfg-3xoFkI {
+    background-color: rgba(0,0,0,.75);
+}
+.theme-dark .tabBar-PTjkZh {
+    border-bottom-color: transparent;
+}
+.theme-dark .top-2qoLb2 .itemSelected-3XxAMf {
+    border-bottom-color: var(--main-color);
+}
+.theme-dark .itemDefault-3NDwnY:hover {
+    border-bottom-color: var(--hover-color);
+}
+.theme-dark .card-11ynQk:before {
+    background-color: rgba(255,255,255,.075);
+    border-color:rgba(255,255,255,.075);
+}
+.theme-dark .contentLocked-33_aJm,
+.theme-dark .descriptionColor-2woJAm {
+    color: #999;
+}
+.theme-dark .max-mvI_jT {
+    background-color: var(--main-color);
+    color: #fff;
+}
+.theme-dark .max-mvI_jT:before {
+    border-bottom-color: var(--main-color);
+}
+.theme-dark .wrapperDefault-NeXRmD {
+    background: 
+        linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),var(--main-color);
+}
+.lfg-3xoFkI .pill-1nbD-Z {
+    background-color: var(--main-color);
+}
+.lfg-3xoFkI .pill-1nbD-Z:hover {
+    background-color: var(--hover-color);
+}
+.theme-dark .ui-search-bar {
+    background-color: rgba(255,255,255,.15);
+    
+}
+.theme-dark .ui-search-bar .input {
+    color: #fff;
 }
 
 /*** Friends Area ***/

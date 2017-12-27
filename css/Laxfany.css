@@ -99,9 +99,7 @@ a:hover,
     background: transparent !important;
 }
 .titleBar-3_fDwJ {
-    background:
-        linear-gradient(to bottom, rgba(0,0,0,.9)5%,rgba(0,0,0,.75)),
-        linear-gradient(to right,rgba(0,0,0,.5)25px,rgba(0,0,0,0)70px);
+    background: rgba(0,0,0,.75);
 }
 .typeWindows-15E0Ys {
     margin-top: 0;
@@ -143,7 +141,7 @@ a:hover,
 
 /******** Server List *******/
 .guilds-wrapper {
-    background: linear-gradient(to right,rgba(0, 0, 0, .9)20px,rgba(0,0,0,.75));
+    background: rgba(0,0,0,.75);
 }
 .guilds .friends-icon:hover {
     color: transparent;
@@ -1377,6 +1375,10 @@ textarea {
 }
 .reaction:hover .reaction-count {
     color: rgba( 255, 255, 255, .5) !important;
+}
+.theme-dark .sidebar-32BRdp,
+.theme-dark .reactors-2PjMP0 {
+    background-color: transparent;
 }
 /*** NSFW ***/
 .flex-lFgbSz.flex-3B1Tl4.horizontal-2BEEBe.horizontal-2VE-Fw.flex-3B1Tl4.directionRow-yNbSvJ.justifyCenter-29N31w.alignStretch-1hwxMa.noWrap-v6g9vO{

@@ -143,6 +143,10 @@ a:hover,
 .guilds-wrapper {
     background: rgba(0,0,0,.75);
 }
+.unread-mentionsd-indicator-top .unread-mentions-bar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 .guilds .friends-icon:hover {
     color: transparent;
     background-color: var(--main-color);
@@ -343,6 +347,10 @@ a:hover,
 .icon-3tVJnl {
     width: 12px;
     height: 12px;
+}
+.unreadBar-3lDSDn {
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 .containerDefault-1bbItS,
 .containerDragAfter-3O-noP,
@@ -1830,6 +1838,8 @@ textarea {
 .context-menu .context-menu {
     background: rgba(0, 0, 0, 0.9);
     border-color: transparent;
+    margin-left: 166px;
+    margin-top: -2px;
 }
 .context-menu .item,
 .theme-dark.context-menu .item {

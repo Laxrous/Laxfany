@@ -1712,7 +1712,7 @@ textarea {
     background: linear-gradient(rgba(0,0,0,.0),rgba(0,0,0,.9)),var(--profile);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: top;
 }
 .headerInfo-Gkqcz9 {
     position: relative;

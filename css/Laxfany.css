@@ -99,10 +99,11 @@ a:hover,
     background: transparent !important;
 }
 .titleBar-3_fDwJ {
+    margin-top: -4px;
     background: rgba(0,0,0,.75);
 }
-.typeWindows-15E0Ys {
-    margin-top: 0;
+.winButton-U7zAqI {
+    top: 0;
 }
 .wordmark-2L03Wr {display: none;}
 .typeWindows-15E0Ys .wordmark-2L03Wr path {

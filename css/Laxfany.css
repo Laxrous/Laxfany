@@ -1043,8 +1043,15 @@ textarea {
 .theme-dark .messages-wrapper .messages .divider:not(.red) div,
 .friends-table .messages .divider:not(.red) div,
 .messages-wrapper .messages .divider:not(.red) div {
-    background: var(--main-color); 
+    background: var(--main-color);
     opacity: 1;
+}
+.theme-dark .friends-table .messages .divider:not(.red) span,
+.theme-dark .messages-wrapper .messages .divider:not(.red) span,
+.chat .divider span {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 .theme-dark .friends-table .messages .divider span,
 .theme-dark .friends-table .messages .divider:before,
@@ -1053,15 +1060,18 @@ textarea {
 .chat .divider:before {
     background: transparent;
 }
-.chat .divider span {
-    background: none;
-    color: #fff !important;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
 .messages .divider-red + .divider {
     margin-top: 30px;
+}
+.message-group.has-divider {
+    border-image: linear-gradient(
+        to right, var(--main-color) calc(50% - 110px),
+	transparent calc(50% - 110px), transparent calc(50% + 105px),
+	var(--main-color) calc(50% + 105px), var(--main-color) 100%);
+    border-image-slice: 1;
+}
+.message-group.has-divider.hide-overflow + .divider:not(.red) div{
+    background: transparent;
 }
 /* Server Invite Link Button */
 .invite-button {

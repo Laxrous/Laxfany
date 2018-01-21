@@ -1091,6 +1091,12 @@ textarea {
 }
 
 /* Drag and Drop Upload */
+.uploadModalIn-14sS7w .uploadDropModal-BpFgz7 .bgScale-1i4Cp3 {
+	background: var(--main-color);
+}
+.uploadModalIn-14sS7w .uploadDropModal-BpFgz7 .inner-1-09ZV .instructions-KnejBP {
+	color: #eee;
+}
 .uploadModal-2KN6Mm {
     background-color: rgba(30, 30, 30, 0.78);
 }
@@ -1122,6 +1128,9 @@ textarea {
 }
 .textAreaForm-2NWGTp:focus {
     border: 2px solid var(--hover-color);
+}
+.theme-brand .inner-3if5cm {
+    background-color: transparent;
 }
 .uploadModal-2KN6Mm .inner-1-09ZV .file-XhJJS_ .icon-19bbE_.image-sUU6Oh {
     background-color: transparent;

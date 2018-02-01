@@ -1412,11 +1412,18 @@ textarea {
     font-size: 14px;
 }
 .channel-members .member .member-activity {
-    color: transparent;
+    overflow: visible;
+    font-size: 0;
+}
+.channel-members .member .member-activity:before {
+    content: "EZ Clap";
+    font-size: 11px;
     margin-left: -35px;
+    color: transparent;
 }
 .channel-members .member .member-activity strong {
     font-weight: 600;
+    font-size: 11px;
     color: #fff;
 }
 .bot-tag {
@@ -1427,7 +1434,7 @@ textarea {
 .roleCircle-3-vPZq[style*="background-color: rgb(185, 187, 190);"] {
     background-color: var(--main-color) !important;
 }
-.role-3rahR_{z-index: 4; border-radius: 3px; opacity: .7; color: rgba(255,255,255,.7)}
+.role-3rahR_{z-index: 4; border-radius: 3px; opacity: .8; color: rgba(255,255,255,.7)}
 .role-3rahR_:hover{opacity: 1; color: #fff}
 .role-3rahR_[style*="border-color: rgba(185, 187, 190, 0.6);"] {
     border: 1px solid var(--main-color) !important;
@@ -1449,7 +1456,7 @@ textarea {
     pointer-events: none;
 }
 .role-3rahR_:hover .roleCircle-3-vPZq::after {
-    opacity: .15;
+    opacity: .20;
 }
 .role-3rahR_:hover .roleRemoveIcon-2iu0iE {position: absolute;}
 .theme-dark .addButton-3RuTE0 {
@@ -1514,9 +1521,9 @@ textarea {
 .userPopout-4pfA0d .note textarea {
     padding: 4px 6px !important;
 }
-.userPopout-4pfA0d .quick-message {
-    border: transparent;
-    background: rgba(255,255,255,.07);
+.userPopout-4pfA0d .quickMessage-28pD5Y {
+    border-color: transparent;
+    background-color: rgba(255,255,255,.07);
     color: #fff;
 }
 .body-3rkFrF .marginBottom20-2Ifj-2 {
@@ -1561,8 +1568,9 @@ textarea {
 .userPopout-4pfA0d .note textarea {
     padding: 0;
 }
-.userPopout-4pfA0d .protip,
-.userPopout-4pfA0d .protip .label {
+.userPopout-4pfA0d .protip-12obwm,
+.userPopout-4pfA0d .inline-XIL6yQ .pro-1IhGKk,
+.userPopout-4pfA0d .inline-XIL6yQ .tip-1Hs8ce {
     color: transparent;
 }
 .theme-dark #autocomplete-popout section {
@@ -1582,6 +1590,9 @@ textarea {
 .theme-dark #autocomplete-popout .row.selected,
 .theme-dark #autocomplete-popout .row:hover {
     background: rgba(255,255,255,.15);
+}
+.headerSpotify-1fSJPO {
+    background: rgba(29, 185, 84, .5);
 }
 
 /***** User Profile ****/
@@ -1689,7 +1700,6 @@ textarea {
     border-color: #282b30;
 }
 
-
 /*** New Profiles ***/
 .topSectionNormal-2LlRG1,
 .theme-dark .body-3_tdh6,
@@ -1744,8 +1754,21 @@ textarea {
     border-bottom: 2px solid transparent;
     border-radius: 0;
 }
+.topSectionSpotify-3744IX .buttonGreenInvertedDefault-3m-pe- {
+	background: none;
+    position: absolute;
+    color: hsla(0,0%,100%,.6);
+    top: 286px;
+    right: 30px;
+    height: 52px;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+}
 .topSectionStreaming-3rIBIm {
     background: rgba(90, 55, 150, .8);
+}
+.topSectionSpotify-3744IX {
+    background: rgba(29, 185, 84, .5);
 }
 .header-2Lg0Oe .buttonBrandInverted-VFL7Yc:hover,
 .header-2Lg0Oe .buttonGreenFilled-6QHNrw:hover {
@@ -1802,7 +1825,6 @@ textarea {
 .theme-dark .listRow-1wEi-U .listDiscriminator-yFeQU-{
     color: #fff;
 }
-
 
 
 /*** Right Clicking User / Context Menu ***/
@@ -2324,7 +2346,7 @@ button.win-close:hover {
     background: rgba(255, 255, 255, .1)!important;
 }
 .username {
-    color: var(--hover-color);
+    color: var(--main-color);
 }
 .status-text {
     color: #fff;
@@ -3068,6 +3090,16 @@ button.win-close:hover {
 /* BetterDiscord Stuff */
 span#pubslayerroot .sidebar-region .scroller-wrap{
     background:rgba(0,0,0,.7);
+}
+.bd-modal-wrapper .bd-modal-body {
+    background-color: rgba(0,0,0,0.85);
+}
+.bd-modal-wrapper .header,
+.theme-dark .bd-modal .footer-1PYmcw {
+    background-color: rgba(0,0,0,0.9);
+}
+.bd-modal-wrapper .footer button {
+    background-color: var(--main-color);
 }
 /* BD Plugins/Themes List */
 .bda-slist li {

@@ -1744,16 +1744,7 @@ textarea {
     border-bottom: 2px solid transparent;
     border-radius: 0;
 }
-.topSectionStreaming-3rIBIm .buttonBrandInverted-VFL7Yc {
-    background: none;
-    position: absolute;
-    color: hsla(0,0%,100%,.6);
-    top: 229px;
-    right: 30px;
-    height: 52px;
-    border-bottom: 2px solid transparent;
-    border-radius: 0;
-}
+.topSectionStreaming-3rIBIm .buttonBrandInverted-VFL7Yc,
 .topSectionSpotify-3744IX .buttonGreenInvertedDefault-3m-pe- {
 	background: none;
     position: absolute;
@@ -1771,10 +1762,11 @@ textarea {
     background: rgba(29, 185, 84, .5);
 }
 .header-2Lg0Oe .buttonBrandInverted-VFL7Yc:hover,
-.header-2Lg0Oe .buttonGreenFilled-6QHNrw:hover {
+.header-2Lg0Oe .buttonGreenFilled-6QHNrw:hover,
+.header-2Lg0Oe .buttonGreenInvertedDefault-3m-pe-:hover {
     color: var(--hover-color);
     background: none;
-	border-bottom-color: var(--hover-color);
+    border-bottom-color: var(--hover-color);
 }
 .header-2Lg0Oe .mediumGrow-uovsMu {
     min-height: 52px;
@@ -3119,7 +3111,6 @@ span#pubslayerroot .sidebar-region .scroller-wrap{
 }
 .bda-slist .bda-description {
     color: #D2D2D2;
-    border-top: 1px solid var(--main-color);
     font-size: 14px;
 }
 .bda-slist .bda-footer {

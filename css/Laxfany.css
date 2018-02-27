@@ -597,7 +597,9 @@ a:hover,
     position: relative;
     margin-bottom: 3px;
 }
-
+.container-iksrDt .avatar-small {
+	border-radius: 5px;
+}
 /* Account Buttons */
 .account .btn {
     background: transparent;
@@ -1314,6 +1316,67 @@ textarea {
 }
 /*** Emoji Picker ***/
 /* this shit is hella messy and i don't feel like fixing it - lax */
+/*
+.bda-dark #bda-qem,
+#bda-qem {
+    background: rgba(0, 0, 0, .9) !important;
+    border-bottom: 1px solid rgba(30, 30, 30, .3) !important;
+}
+.bda-dark #bda-qem-favourite-container,
+.bda-dark #bda-qem-twitch-container,
+.bda-dark .emoji-picker,
+#bda-qem-favourite-container,
+#bda-qem-twitch-container,
+.emoji-picker {
+    background: rgba(0, 0, 0, .8) !important;
+}
+.bda-dark #bda-qem button.active,
+#bda-qem button.active {
+    background-color: var(--main-color) !important;
+}
+.bda-dark #bda-qem button:not(.active):hover,
+#bda-qem button:not(.active):hover {
+    background: var(--hover-color) !important;
+}
+.bda-dark #bda-qem button,
+#bda-qem button {
+    background: transparent !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #fff;
+}
+.bda-dark .emoji-picker .scroller .emoji-item,
+.emoji-picker .scroller .emoji-item {
+    border-radius: 5px;
+}
+.bda-dark .emoji-picker .scroller .emoji-item:hover,
+.emoji-picker .scroller .emoji-item:hover,
+.bda-dark .emoji-picker .scroller .emoji-item.selected,
+.emoji-picker .scroller .emoji-item.selected {
+    background-size: 150%;
+    background-position: center;
+}
+.bda-dark .emoji-picker .scroller .emoji-item.selected,
+.emoji-picker .scroller .emoji-item.selected {
+    background-color: var(--main-color) !important;
+}
+.header-toolbar button.active,
+.header-toolbar button.popout-open {
+    background-color: rgba(0, 0, 0, .3) !important;
+}
+.bda-dark .emoji-picker .header .search-bar {
+    background: transparent;
+}
+.emote-container:hover {
+    background: var(--main-color);
+}
+.emote-container:hover .emote-icon {
+    width: 150%;
+    height: 150%;
+}
+
+/* Emoji Picker */
 #bda-qem {
 	background: rgba(0,0,0,.9);
 }
@@ -1389,25 +1452,52 @@ textarea {
 .channel-members-loading {
     display: none;
 }
+.channel-members-wrap{
+    min-width: 90px;
+    width: 90px;
+}
+.channel-members-wrap:hover .channel-members {
+    overflow-y: scroll;
+}
 .theme-dark .channel-members,
 .channel-members {
     background: rgba(0, 0, 0, 0.75);
 }
-.channel-members .member.popout-open,
-.channel-members .member:hover {
-    background: rgba(255, 255, 255, 0.07) !important;
+.channel-members{
+    transform: translate(0px);
+    z-index: 2000;
+    transition: all 300ms ease;
+    overflow-y: hidden;
 }
-.channel-members h2 {
-    color: var(--main-color) !important;
-    text-align: center;
+.channel-members:hover{
+    transform:translate(-150px);
+    background:linear-gradient(to left,rgba(0,0,0,.9),rgba(0,0,0,.9) 90px,rgba(0,0,0,.6) 90px,transparent 240px);
+}
+.theme-dark .channel-members .member:hover {
+    background: rgba(255, 255, 255, 0.07);
+}
+.theme-dark .channel-members h2 {
+    color: var(--main-color);
     text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
     background: rgba(0,0,0,.2);
     border-radius: 3px;
-    width: 145px;
-    margin-left: 50px;
     padding: 9px 0;
-    margin-top: -1px;
+    margin-top: 9px;
+    transform: translate(-50%)scale(0.7);
+    transition:400ms cubic-bezier(.2,0,0,1),max-width 1ms;
+    display: none;
+    min-width: 10px;
+    left: 45px;
+    position: relative;
+    flex-basis: auto;
+    box-sizing: border-box;
+}
+.channel-members:hover h2 {
+    display: block;
+    transform: translate(-15px)scale(1);
+    max-width: 195px;
 }
 .channel-members .avatar-small {
     border-radius: 5px;
@@ -1430,8 +1520,28 @@ textarea {
     font-size: 11px;
     color: #fff;
 }
-.bot-tag {
+.channel-members .member .member-activity,
+.channel-members .member .member-username-inner{
+    opacity: 0;
+    transition: all 100ms ease;
+}
+.channel-members:hover .member .member-activity,
+.channel-members:hover .member .member-username-inner{
+    opacity:1;
+}
+.botTagRegular-288-ZL,
+.botTagInvert-gorWR_ {
     background: var(--main-color);
+    color: #fff;
+}
+.app {
+	overflow-x: hidden !important;
+}
+.channel-members .avatar-small{
+    transform:scale(1.2);
+}
+.channel-members:hover .avatar-small{
+    transform:scale(1);
 }
 
 /**** User Popout ****/
@@ -2584,7 +2694,7 @@ button.win-close:hover {
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
 #pubs-container .scroller::-webkit-scrollbar-thumb,
 .scroller-wrap .scroller::-webkit-scrollbar-thumb,
-.emoji-picker .scroller::-webkit-scrollbar-thumb,
+.emojiPicker-3g68GS .scroller::-webkit-scrollbar-thumb,
 .scroller-fzNley::-webkit-scrollbar-thumb {
     border: 3px solid rgba(0, 0, 0, 0.2)!important;
     background: rgba(255, 255, 255, 0.1)!important;
@@ -2598,7 +2708,7 @@ button.win-close:hover {
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece,
 #pubs-container .scroller::-webkit-scrollbar-track-piece,
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece,
-.emoji-picker .scroller::-webkit-scrollbar-track-piece {
+.emojiPicker-3g68GS .scroller-fzNley::-webkit-scrollbar-track-piece {
     border: solid transparent !important;
     background-color: transparent !important;
 }
@@ -2609,7 +2719,7 @@ button.win-close:hover {
 #bda-qem-favourite-container .scroller::-webkit-scrollbar,
 #bda-qem-twitch-container .scroller::-webkit-scrollbar,
 #pubs-container .scroller::-webkit-scrollbar,
-.emoji-picker .scroller::-webkit-scrollbar {
+.emojiPicker-3g68GS .scroller-fzNley::-webkit-scrollbar {
     background: transparent !important;
 }
 .scrollerThemed-19vinI.themeDark-BdSAwu.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track,
@@ -2624,8 +2734,7 @@ button.win-close:hover {
 .bda-dark .emoji-picker .scroller::-webkit-scrollbar-track,
 #bda-qem-favourite-container .scroller::-webkit-scrollbar-track,
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-track,
-#pubs-container .scroller::-webkit-scrollbar-track,
-.emoji-picker .scroller::-webkit-scrollbar-track {
+#pubs-container .scroller::-webkit-scrollbar-track {
     background: transparent !important;
 }
 .scrollerThemed-19vinI.themeLight-1WK0Av.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track, .theme-dark .scrollerThemed-19vinI.themeLight-1WK0Av.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track, .theme-light .scrollerWrap-2uBjct.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track {

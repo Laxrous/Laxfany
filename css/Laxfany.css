@@ -1214,10 +1214,10 @@ textarea {
 }
 /* Progress Bar */
 .progress-32_u4R {
-    background-color: hsla(0, 0%, 100%, .2);
+    background-color: hsla(0, 0%, 100%, .2) !important;
 }
 .progressBar-mI5LOq {
-    background-color: var(--main-color);
+    background-color: var(--main-color) !important;
 }
 /* Horizontal Embeds */
 .message-group .accessory{
@@ -1465,7 +1465,7 @@ textarea {
 }
 .channel-members{
     transform: translate(0px);
-    z-index: 2000;
+    z-index: 100;
     transition: all 300ms ease;
     overflow-y: hidden;
 }
@@ -1486,7 +1486,7 @@ textarea {
     padding: 9px 0;
     margin-top: 9px;
     transform: translate(-50%)scale(0.7);
-    transition:400ms cubic-bezier(.2,0,0,1),max-width 1ms;
+    transition: 400ms cubic-bezier(.2,0,0,1),max-width 1ms;
     display: none;
     min-width: 10px;
     left: 45px;
@@ -1747,7 +1747,7 @@ textarea {
 
 
 /*** Right Clicking User / Context Menu ***/
-.theme-dark .contextMenu-uoJTbz {
+.theme-dark.contextMenu-uoJTbz {
     background: rgba(0, 0, 0, 0.9);
     cursor: pointer;
 }
@@ -1934,30 +1934,35 @@ textarea {
 .search-popout .results-group .search-clear-history:hover {
     opacity: .7;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker,
-.theme-light .ui-calendar-picker .react-datepicker,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__header,
-.theme-light .ui-calendar-picker .react-datepicker__header,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--disabled,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--outside-month,
-.theme-light .ui-calendar-picker .react-datepicker__day--disabled,
-.theme-light .ui-calendar-picker .react-datepicker__day--outside-month {
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker,
+.theme-light .calendarPicker-16Q6sl .react-datepicker,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__header,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__header,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day--disabled,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day--outside-month,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day--disabled,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day--outside-month {
     background-color: transparent;
+}
+
+.search-popout .option.user .displayed-nick {
+	color: var(--main-color);
 }
 .search-popout .search-option .filter,
 .search-popout .option.selected .non-text,
 .search-popout .option.selected .answer,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__current-month,
-.theme-light .ui-calendar-picker .react-datepicker__current-month {
+.search-popout .option.selected .displayed-nick,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__current-month,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__current-month {
     color: #fff;
 }
 .search-popout .date-picker {
     border-color: transparent;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--next,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--previous,
-.theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--next,
-.theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--previous {
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__navigation.react-datepicker__navigation--next,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__navigation.react-datepicker__navigation--previous,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__navigation.react-datepicker__navigation--next,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__navigation.react-datepicker__navigation--previous {
     border-color: transparent;
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/expand_more.svg) !important;
     background-repeat: no-repeat;
@@ -1967,62 +1972,62 @@ textarea {
     -webkit-transform: rotateZ(90deg);
     transform: rotateZ(90deg);
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--next.react-datepicker__navigation--next,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--previous.react-datepicker__navigation--next,
-.theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--next.react-datepicker__navigation--next,
-.theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--previous.react-datepicker__navigation--next {
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__navigation.react-datepicker__navigation--next.react-datepicker__navigation--next,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__navigation.react-datepicker__navigation--previous.react-datepicker__navigation--next,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__navigation.react-datepicker__navigation--next.react-datepicker__navigation--next,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__navigation.react-datepicker__navigation--previous.react-datepicker__navigation--next {
     -webkit-transform: rotateZ(-90deg);
     transform: rotateZ(-90deg);
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__week:first-of-type .react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--outside-month),
-.theme-light .ui-calendar-picker .react-datepicker__week:first-of-type .react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--outside-month) {
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__week:first-of-type .react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--outside-month),
+.theme-light .calendarPicker-16Q6sl .react-datepicker__week:first-of-type .react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--outside-month) {
     border-top: 1px solid hsla(0, 0%, 100%, .04) !important;
     border-bottom: none !important;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__week:first-of-type + .react-datepicker__week .react-datepicker__day,
-.theme-light .ui-calendar-picker .react-datepicker__week:first-of-type + .react-datepicker__week .react-datepicker__day {
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__week:first-of-type + .react-datepicker__week .react-datepicker__day,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__week:first-of-type + .react-datepicker__week .react-datepicker__day {
     border-top: 1px solid hsla(0, 0%, 100%, .04) !important;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__week .react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--outside-month):last-of-type,
-.theme-light .ui-calendar-picker .react-datepicker__week .react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--outside-month):last-of-type {
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__week .react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--outside-month):last-of-type,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__week .react-datepicker__day:not(.react-datepicker__day--disabled):not(.react-datepicker__day--outside-month):last-of-type {
     border-right: 1px solid hsla(0, 0%, 100%, .04) !important;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day,
-.theme-light .ui-calendar-picker .react-datepicker__day {
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day {
     border-color: transparent !important;
     border-left: 1px solid hsla(0, 0%, 100%, .04) !important;
     border-bottom: 1px solid hsla(0, 0%, 100%, .04) !important;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--selected:hover,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day:hover,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--today::after,
-.theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--selected:hover,
-.theme-light .ui-calendar-picker .react-datepicker__day:hover,
-.theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--today::after,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day.react-datepicker__day--selected:hover,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day:hover,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day.react-datepicker__day--today::after,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day.react-datepicker__day--selected:hover,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day:hover,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day.react-datepicker__day--today::after,
 .search-popout .date-picker .date-picker-hint .hint-value {
     background-color: var(--main-color);
 }
 .search-popout .date-picker .date-picker-hint .hint-value:hover {
     background-color: var(--hover-color);
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day-name,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day,
-.theme-light .ui-calendar-picker .react-datepicker__day-name,
-.theme-light .ui-calendar-picker .react-datepicker__day {
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day-name,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day-name,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day {
     color: hsla(0, 0%, 100%, .3);
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--disabled,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--outside-month,
-.theme-light .ui-calendar-picker .react-datepicker__day--disabled,
-.theme-light .ui-calendar-picker .react-datepicker__day--outside-month {
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day--disabled,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day--outside-month,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day--disabled,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day--outside-month {
     background: transparent;
     border-color: hsla(0, 0%, 100%, .02) !important;
     color: rgba(85, 85, 85, .5);
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day:not(.react-datepicker__day--disabled) + .react-datepicker__day--disabled,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day:not(.react-datepicker__day--outside-month) + .react-datepicker__day--outside-month,
-.theme-light .ui-calendar-picker .react-datepicker__day:not(.react-datepicker__day--disabled) + .react-datepicker__day--disabled,
-.theme-light .ui-calendar-picker .react-datepicker__day:not(.react-datepicker__day--outside-month) + .react-datepicker__day--outside-month {
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day:not(.react-datepicker__day--disabled) + .react-datepicker__day--disabled,
+.theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__day:not(.react-datepicker__day--outside-month) + .react-datepicker__day--outside-month,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day:not(.react-datepicker__day--disabled) + .react-datepicker__day--disabled,
+.theme-light .calendarPicker-16Q6sl .react-datepicker__day:not(.react-datepicker__day--outside-month) + .react-datepicker__day--outside-month {
     border-left-color: hsla(0, 0%, 100%, .04) !important;
 }
 .search-popout .date-picker .date-picker-hint {
@@ -2172,13 +2177,17 @@ button.win-close:hover {
 .add-friend-popout .btn,
 .private-channels .channel.selected .icon-friends,
 #friends .tab-bar .tab-bar-item.selected,
-.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary {
+.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
     background-color: var(--main-color)!important;
+}
+.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary { 
+    background-color: transparent !important; 
 }
 #friends .tab-bar .tab-bar-item:hover:not(.selected),
 .theme-dark #friends .tab-bar .tab-bar-item:hover:not(.selected),
 .theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
     background-color: var(--hover-color)!important;
+    color: #fff;
 }
 #friends .tab-bar .tab-bar-item.selected {
     color: #fff !important;
@@ -2468,6 +2477,7 @@ button.win-close:hover {
     background: var(--main-color);
 }
 /* Textbox */
+.theme-dark .input-2YozMi.focused-xL_GX6,
 .theme-dark .input-2YozMi:focus,
 .theme-light .input-2YozMi:focus {
     border-color: var(--main-color);
@@ -2489,31 +2499,31 @@ button.win-close:hover {
 .Select.Select--single.is-open.has-value .Select-control {
     border: 1px solid var(--main-color);
 }
-.theme-dark .ui-select .Select-control:hover,
-.theme-light .ui-select .Select-control:hover {
+.theme-dark .select-3JqNgs .Select-control:hover,
+.theme-light .select-3JqNgs .Select-control:hover {
     border-color: var(--hover-color);
 }
-.theme-dark .ui-select>.Select .Select-menu-outer,
-.theme-light .ui-select>.Select .Select-menu-outer {
+.theme-dark .select-3JqNgs .Select-menu-outer,
+.theme-light .select-3JqNgs .Select-menu-outer {
     background-color: #000;
     border-color: var(--main-color);
     border-top: 0;
     margin: 0;
 }
-.theme-dark .ui-select>.Select .Select-option,
-.theme-light .ui-select>.Select .Select-option {
+.theme-dark .select-3JqNgs>.Select .Select-option,
+.theme-light .select-3JqNgs>.Select .Select-option {
     background-color: transparent;
     color: #f6f6f7;
     overflow: hidden;
     margin: 3px;
 }
-.theme-dark .ui-select>.Select .Select-option.is-selected,
-.theme-light .ui-select>.Select .Select-option.is-selected {
+.theme-dark .select-3JqNgs>.Select .Select-option.is-selected,
+.theme-light .select-3JqNgs>.Select .Select-option.is-selected {
     background: var(--main-color);
     color: #fff;
 }
-.theme-dark .ui-select>.Select .Select-option:hover,
-.theme-light .ui-select>.Select .Select-option:hover {
+.theme-dark .select-3JqNgs>.Select .Select-option:hover,
+.theme-light .select-3JqNgs>.Select .Select-option:hover {
     background: var(--hover-color);
     color: #fff;
 }
@@ -2687,7 +2697,7 @@ button.win-close:hover {
 .theme-light .scrollerWrap-2uBjct .scroller-fzNley::-webkit-scrollbar-thumb,
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb,
 .bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
-.theme-dark .ui-select>.Select .Select-menu::-webkit-scrollbar-thumb,
+.theme-dark .select-3JqNgs>.Select .Select-menu::-webkit-scrollbar-thumb,
 .bda-dark #pubs-container .scroller::-webkit-scrollbar-thumb,
 .bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb,
 #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb,
@@ -2699,7 +2709,7 @@ button.win-close:hover {
     border: 3px solid rgba(0, 0, 0, 0.2)!important;
     background: rgba(255, 255, 255, 0.1)!important;
 }
-.theme-dark .ui-select>.Select .Select-menu::-webkit-scrollbar-track-piece,
+.theme-dark .select-3JqNgs>.Select .Select-menu::-webkit-scrollbar-track-piece,
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-track-piece,
 .bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece,
 .bda-dark #pubs-container .scroller::-webkit-scrollbar-track-piece,

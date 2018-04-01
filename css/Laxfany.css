@@ -708,7 +708,7 @@ a:hover,
 .popout header {
     background-color: var(--main-color);
 }
-.popout section {
+.popout section { /* also role popoput adding */
     background-color: rgba(0, 0, 0, 0.9);
 }
 #rtc-connection-popout hr {
@@ -1449,6 +1449,7 @@ textarea {
 }
 
 /******* Members List Area ******/
+
 .channel-members-loading {
     display: none;
 }
@@ -1470,10 +1471,10 @@ textarea {
     overflow-y: hidden;
 }
 .channel-members:hover{
-    transform:translate(-150px);
-    background:linear-gradient(to left,rgba(0,0,0,.9),rgba(0,0,0,.9) 90px,rgba(0,0,0,.6) 90px,transparent 240px);
+    transform:translate(-137px);
+    background:linear-gradient(to left,rgba(0,0,0,.9),rgba(0,0,0,.9) 89px,rgba(0,0,0,.6) 89px,transparent 227px);
 }
-.theme-dark .channel-members .member:hover {
+.theme-dark .channel-members .member-2FrNV0:hover .content-3JzEqq{
     background: rgba(255, 255, 255, 0.07);
 }
 .theme-dark .channel-members h2 {
@@ -1499,34 +1500,34 @@ textarea {
     transform: translate(-15px)scale(1);
     max-width: 195px;
 }
-.channel-members .avatar-small {
+.channel-members .image-EVRGPw {
     border-radius: 5px;
 }
-.channel-members .member .member-username {
+.channel-members .username-MwOsla {
     font-size: 14px;
 }
-.channel-members .member .member-activity {
+.channel-members .activityText-258pdj {
     overflow: visible;
     font-size: 0;
 }
-.channel-members .member .member-activity:before {
+.channel-members .activityText-258pdj:before {
     content: "EZ Clap";
     font-size: 11px;
     margin-left: -35px;
     color: transparent;
 }
-.channel-members .member .member-activity strong {
+.channel-members .activityText-258pdj strong {
     font-weight: 600;
     font-size: 11px;
     color: #fff;
 }
-.channel-members .member .member-activity,
-.channel-members .member .member-username-inner{
+.channel-members .activityText-258pdj,
+.channel-members .memberInner-3XUq9K {
     opacity: 0;
     transition: all 100ms ease;
 }
-.channel-members:hover .member .member-activity,
-.channel-members:hover .member .member-username-inner{
+.channel-members:hover .activityText-258pdj,
+.channel-members:hover .memberInner-3XUq9K{
     opacity:1;
 }
 .botTagRegular-288-ZL,
@@ -1537,10 +1538,14 @@ textarea {
 .app {
 	overflow-x: hidden !important;
 }
-.channel-members .avatar-small{
+.channel-members .mask-2vyqAW {
+	-webkit-mask: none;
+	mask: none;
+}
+.channel-members .avatar-1BXaQj.small-TEeAkX {
     transform:scale(1.2);
 }
-.channel-members:hover .avatar-small{
+.channel-members:hover .avatar-1BXaQj.small-TEeAkX {
     transform:scale(1);
 }
 
@@ -1628,6 +1633,22 @@ textarea {
 .barInner-2eCe2h {
 	background: linear-gradient(to right, var(--hover-color) 0%, var(--main-color) 100%)
 }
+.theme-dark #autocomplete-popout section {
+	background-color: rgba(0,0,0,.9);
+}
+.theme-dark #autocomplete-popout .row.selected{
+	background: rgba(255,255,255,.15);
+}
+.theme-dark #autocomplete-popout .autocomplete-header-background {
+	background-color: var(--main-color);
+}
+.theme-dark #autocomplete-popout h3 {
+	color: #fff;
+}
+.theme-dark #autocomplete-popout header input[type="text"]::-webkit-input-placeholder {
+	color: #ddd;
+}
+
 /***** User Profile ****/
 .topSectionNormal-2LlRG1,
 .theme-dark .body-3_tdh6,
@@ -2747,6 +2768,7 @@ button.win-close:hover {
 #pubs-container .scroller::-webkit-scrollbar-track {
     background: transparent !important;
 }
+.scrollerThemed-19vinI.themeDark-BdSAwu.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track, .theme-dark .scrollerWrap-2uBjct.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track, .theme-light .scrollerThemed-19vinI.themeDark-BdSAwu.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track,
 .scrollerThemed-19vinI.themeLight-1WK0Av.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track, .theme-dark .scrollerThemed-19vinI.themeLight-1WK0Av.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track, .theme-light .scrollerWrap-2uBjct.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track {
 	background-color: transparent;
 }

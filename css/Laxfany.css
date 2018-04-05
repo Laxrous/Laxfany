@@ -1449,35 +1449,30 @@ textarea {
 }
 
 /******* Members List Area ******/
-
-.channel-members-loading {
-    display: none;
-}
-.channel-members-wrap{
+.membersWrap-3wRngy {
     min-width: 90px;
     width: 90px;
 }
-.channel-members-wrap:hover .channel-members {
+.membersWrap-3wRngy:hover .members-1bid1J {
     overflow-y: scroll;
 }
-.theme-dark .channel-members,
-.channel-members {
+.theme-dark .members-1bid1J {
     background: rgba(0, 0, 0, 0.75);
 }
-.channel-members{
+.members-1bid1J {
     transform: translate(0px);
     z-index: 100;
     transition: all 300ms ease;
     overflow-y: hidden;
 }
-.channel-members:hover{
-    transform:translate(-137px);
-    background:linear-gradient(to left,rgba(0,0,0,.9),rgba(0,0,0,.9) 89px,rgba(0,0,0,.6) 89px,transparent 227px);
+.members-1bid1J:hover {
+    transform:translate(-150px);
+    background:linear-gradient(to left,rgba(0,0,0,.9),rgba(0,0,0,.9) 90px,rgba(0,0,0,.6) 90px,transparent 240px);
 }
-.theme-dark .channel-members .member-2FrNV0:hover .content-3JzEqq{
+.theme-dark .members-1bid1J .member-2FrNV0:hover .content-3JzEqq{
     background: rgba(255, 255, 255, 0.07);
 }
-.theme-dark .channel-members h2 {
+.theme-dark .members-1bid1J .membersGroup-3_dP5E {
     color: var(--main-color);
     text-transform: uppercase;
     text-align: center;
@@ -1495,39 +1490,39 @@ textarea {
     flex-basis: auto;
     box-sizing: border-box;
 }
-.channel-members:hover h2 {
+.members-1bid1J:hover .membersGroup-3_dP5E {
     display: block;
     transform: translate(-15px)scale(1);
     max-width: 195px;
 }
-.channel-members .image-EVRGPw {
+.members-1bid1J .image-EVRGPw {
     border-radius: 5px;
 }
-.channel-members .username-MwOsla {
+.members-1bid1J .username-MwOsla {
     font-size: 14px;
 }
-.channel-members .activityText-258pdj {
+.members-1bid1J .activityText-258pdj {
     overflow: visible;
     font-size: 0;
 }
-.channel-members .activityText-258pdj:before {
+.members-1bid1J .activityText-258pdj:before {
     content: "EZ Clap";
     font-size: 11px;
     margin-left: -35px;
     color: transparent;
 }
-.channel-members .activityText-258pdj strong {
+.members-1bid1J .activityText-258pdj strong {
     font-weight: 600;
     font-size: 11px;
     color: #fff;
 }
-.channel-members .activityText-258pdj,
-.channel-members .memberInner-3XUq9K {
+.members-1bid1J .activityText-258pdj,
+.members-1bid1J .memberInner-3XUq9K {
     opacity: 0;
     transition: all 100ms ease;
 }
-.channel-members:hover .activityText-258pdj,
-.channel-members:hover .memberInner-3XUq9K{
+.members-1bid1J:hover .activityText-258pdj,
+.members-1bid1J:hover .memberInner-3XUq9K{
     opacity:1;
 }
 .botTagRegular-288-ZL,
@@ -1538,14 +1533,14 @@ textarea {
 .app {
 	overflow-x: hidden !important;
 }
-.channel-members .mask-2vyqAW {
+.members-1bid1J .mask-2vyqAW {
 	-webkit-mask: none;
 	mask: none;
 }
-.channel-members .avatar-1BXaQj.small-TEeAkX {
+.members-1bid1J .avatar-1BXaQj.small-TEeAkX {
     transform:scale(1.2);
 }
-.channel-members:hover .avatar-1BXaQj.small-TEeAkX {
+.members-1bid1J:hover .avatar-1BXaQj.small-TEeAkX {
     transform:scale(1);
 }
 

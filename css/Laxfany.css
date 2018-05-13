@@ -2678,7 +2678,7 @@ span#pubslayerroot .sidebar-region .scroller-wrap{
 
 /* Twitter Fullscreen */
 iframe[src*="https://twitter.com"] {
-	width: 400px;
+	width: auto;
 }
 .embedImage-2W1cML {
 	overflow: visible;

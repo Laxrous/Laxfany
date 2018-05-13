@@ -460,8 +460,10 @@ body::after {
 .listCollapse-3hmWwX .avatarSpeaking-1wJCNq {
     position: relative;
 }
-.contentHoveredVoice-3qGNKh:active,
-.contentSelectedVoice-gTtYM9:active {
+.contentHoveredText-2D9B-x,
+.contentHoveredVoice-3p_NEO,
+.contentHoveredVoice-3p_NEO:active,
+.contentSelectedVoice-1WDIBM:active {
     background: rgba(255,255,255,.07);
 }
 /* Voice Connection Info Popout */
@@ -1829,14 +1831,18 @@ button.win-close:hover {
 }
 
 /**** Settings ****/
-.theme-dark .ui-standard-sidebar-view .sidebar-region,
-.theme-light .ui-standard-sidebar-view .sidebar-region {
-    background: var(--settings);
+.theme-dark .ui-standard-sidebar-view {
+    background: linear-gradient(to right,rgba(0,0,0,.75), rgba(0,0,0,.75)), var(--settings);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
+.theme-dark .ui-standard-sidebar-view .sidebar-region,
+.theme-dark .ui-standard-sidebar-view .content-region {
+    background: transparent;
+}
 .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller {
-    background: rgba(0,0,0,.7);
+    background: transparent;
 }
 .layer.animating {
     transform: none !important;
@@ -1873,12 +1879,6 @@ button.win-close:hover {
     background-color: rgb(114, 137, 218) !important;
     color: #fff !important;
 }
-.theme-dark .ui-standard-sidebar-view .content-region {
-    background: rgba(0,0,0,.6);
-}
-.theme-dark .ui-standard-sidebar-view  {
-    background: transparent;
-}
 .buttonBrandFilled-3Mv0Ra,
 .user-settings-security button,
 .buttonGreenFilled-6QHNrw,
@@ -1902,8 +1902,9 @@ button.win-close:hover {
 .theme-light .ui-standard-sidebar-view .btn-close:hover {
     background-color: hsla(218,5%,47%,.3);
 }
-.theme-light .ui-standard-sidebar-view .esc-text {
-    color: #72767d;
+.theme-light .ui-standard-sidebar-view .esc-text,
+.theme-dark .description-3_Ncsb, .theme-dark .labelDescriptor-1PqHgD {
+    color: #bbb;
 }
 .form hr {
     border-bottom: 0;
@@ -2671,4 +2672,15 @@ span#pubslayerroot .sidebar-region .scroller-wrap{
 }
 .theme-light .iconButtonDefault-3QZh-A.button-1aU9q1 {
     opacity: .2;
+}
+
+
+
+/* Twitter Fullscreen */
+iframfe[src*="https://twitter.com"] {
+	width: 400px;
+}
+f
+.embdedImage-2W1cML {
+	overflow: visible;
 }

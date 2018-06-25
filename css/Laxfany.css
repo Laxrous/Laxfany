@@ -1,7 +1,6 @@
 /*****************************************************************************
 Laxfany - SNSD Theme v3 by Laxr
 Edited ver. of ClearVision by Zerthox with SmarterEmbeds by BeardDesign
-and Old TitleBar by intrnl
 *****************************************************************************/
 body::after,
 #pubs-container::before,
@@ -108,11 +107,14 @@ body::after {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-.guilds-wrapper .guilds .friends-icon {
-    background-image: url(https://i.imgur.com/4n2lbUD.jpg);
+
+.home-icon {
+    background: url(https://i.imgur.com/4n2lbUD.png) no-repeat center center / 40px 35px;
 }
-.guilds .friends-icon:hover {
-    color: transparent;
+.home-icon path {
+    d: none;
+}
+.home-icon:hover {
     background-color: var(--main-color);
 }
 #bd-pub-button { text-transform: uppercase }
@@ -412,6 +414,24 @@ body::after {
 }
 .modal-3HD5ck .header-1R_AjF h2 {
     color: var(--main-color);
+}
+.inviteModal-34DdOm .scroller-3__pG8,
+.theme-dark .contentWrapper-3WC1ID {
+	background: rgba(0,0,0,.75);
+}
+.inviteModal-34DdOm .avatar-xxxlarge {
+	background-color: transparent;
+	border-radius: 3px;
+}
+.inviteModal-34DdOm .inviteTitle-2-D7Bk {
+	color: var(--main-color);
+}
+.inviteModal-34DdOm .inviteBody-1Y3j7y,
+.subTitle-3TUjmF {
+	color: #fff
+}
+.lookLink-9FtZy-.colorBrand-3pXr91 {
+    color: #ddd;
 }
 
 /* Account Area */
@@ -755,14 +775,21 @@ textarea {
     background-color: transparent;
 }
 /* Attachments Button */
-.theme-dark .attachPopout-gjwHsr {
+/* maybe delete first one because it's old idk yet */
+.theme-dark .attachPopout-gjwHsr,
+.theme-dark .attachPopout-1n-ZKM {
     background: rgba(0, 0, 0, .9);
 }
-.theme-dark .attachPopoutRow-elxASe {
+.theme-dark .attachPopoutRow-elxASe,
+.theme-dark .attachPopoutRow-KrE-f6 {
     transition:none;
 }
-.theme-dark .attachPopoutRow-elxASe:hover {
+.theme-dark .attachPopoutRow-elxASe:hover,
+.theme-dark .attachPopoutRow-KrE-f6:hover {
     background-color: var(--hover-color);
+}
+.attachButtonPlay-ZnFdQr {
+    color: var(--main-color);
 }
 /* New Messages/Date Divider */
 .messages .divider-red + .divider {
@@ -1399,7 +1426,8 @@ textarea {
     background-color: rgba(0, 0, 0, .85);
     border: none;
 }
-.theme-dark .messagesPopoutWrap-1MQ1bW .header-ykumBX {
+.theme-dark .messagesPopoutWrap-1MQ1bW .header-ykumBX,
+.theme-dark .messagesPopoutWrap-1MQ1bW .footer-1kmXd4 {
     background-color: rgba(0, 0, 0, .3);
 }
 .popout .themedPopout-25DgLi .header-SsaQ8X .title,
@@ -1423,7 +1451,6 @@ textarea {
 .recent-mentions-popout .mention-filter .label {
     color: hsla(0,0%,100%,.3);
 }
-
 
 .messages-popout-wrap .messages-popout .message-group {
     background-color: transparent !important;
@@ -1830,6 +1857,46 @@ button.win-close:hover {
     color: #fff;
 }
 
+/**** Games Area ***/
+.theme-dark .activityFeed-28jde9,
+.article-FleDq5,
+.carousel-JbsNzL,
+.newsLink-38Naqi,
+.news-2GDtLJ{
+    background-color: transparent;
+}
+.paginationItem-3-MBTL:after {
+    background: transparent;
+}
+.arrow-1-DaGi {
+    color: #fff;
+}
+.theme-dark .dockItem-2kQDqg:hover,
+.theme-dark .header-1RC2Wb:hover {
+    background-color: rgba(0,0,0,.7);
+}
+.theme-dark .header-1RC2Wb {
+    background-color: rgba(255, 255, 255, .2);
+}
+.headerButtonColor-G7_f-V,
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+    background: var(--main-color);
+}
+.theme-dark .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover {
+    background: var(--hover-color);
+}
+.theme-dark .card-7JP0BX {
+    background-color: transparent;
+}
+.theme-dark .body-SKIE6r {
+    background: rgba(255, 255, 255, .1);
+}
+.theme-dark .playTime-2SuPqW, .theme-dark .discriminator-1Kma2g,
+.theme-dark .discriminator-pIKHPn, .theme-dark .playTime-1laRtO,
+.subtitle-rPfx7J {
+    color: #ddd;
+}
+
 /**** Settings ****/
 .theme-dark .ui-standard-sidebar-view {
     background: linear-gradient(to right,rgba(0,0,0,.75), rgba(0,0,0,.75)), var(--settings);
@@ -2036,8 +2103,7 @@ button.win-close:hover {
 .theme-light .select-3JqNgs .Select-control:hover {
     border-color: var(--hover-color);
 }
-.theme-dark .select-3JqNgs .Select-menu-outer,
-.theme-light .select-3JqNgs .Select-menu-outer {
+.theme-dark .select-2TCrqx .Select-menu-outer {
     background-color: #000;
     border-color: var(--main-color);
     border-top: 0;

@@ -1,5 +1,5 @@
 /*****************************************************************************
-Laxfany - SNSD Theme v3 by Laxr
+Laxfany - SNSD Theme by Laxr
 Edited ver. of ClearVision by Zerthox with SmarterEmbeds by BeardDesign
 *****************************************************************************/
 body::after,
@@ -117,6 +117,12 @@ body::after {
 .home-icon:hover {
     background-color: var(--main-color);
 }
+.guilds-wrapper .guilds .guild-icon { /* work around the black bg behind server icon  */
+    border-radius: 1px;
+}
+.guild-inner.da-guildInner {
+    background-color: transparent !important;
+}
 #bd-pub-button { text-transform: uppercase }
 #bd-pub-button:hover {
     background-color: var(--main-color) !important;
@@ -177,7 +183,7 @@ body::after {
     left: -17px;
 }
 .guilds-wrapper .guilds .guild .guild-inner {
-    background-color: transparent !important;
+    background: transparent;
 }
 .guilds-wrapper .guilds .guild.audio .guild-inner::after,
 .guilds-wrapper .guilds .guild.video .guild-inner::after {
@@ -447,13 +453,13 @@ body::after {
     background-color: rgba(255,255,255,.07);
     border-radius: 3px;
 }
+/* Voice **/
 .avatarDefault-35WC3R,
 .avatarSpeaking-1wJCNq {
     top: 4px;
     position: absolute;
     border-radius: 3px;
     z-index: 2;
-    left: 0px;
 }
 .avatarSpeaking-1wJCNq {
     -webkit-box-shadow: -3.5px 0 0 0 var(--main-color);
@@ -461,12 +467,11 @@ body::after {
 }
 .nameHovered-21k1eo,
 .nameDefault-2s3kbY {
-    padding-left: 28px;
+    padding-left: 20px;
     width: 100%;
 }
 .nameSpeaking-3UhoEZ {
     position: absolute;
-    left: 0px;
     padding-left: 32px;
     background: linear-gradient(to right, var(--main-color) 0%, transparent 35%);
     width: 80%;
@@ -487,20 +492,14 @@ body::after {
     background: rgba(255,255,255,.07);
 }
 /* Voice Connection Info Popout */
-.popout-3sVMXz header {
+.theme-dark .container-2x5lvQ header {
     background-color: var(--main-color);
 }
-.popout-3sVMXz section { /* also role popoput adding */
+.theme-dark .container-2x5lvQ section { /* also role popoput adding */
     background-color: rgba(0, 0, 0, 0.9);
 }
-.popoutTopRight-3BzFIE section:after, .popoutTop-3uu9vG section:after {
-    border-top-color: rgba(0,0,0,.9);
-}
-.container-3nXdBP hr {
-    border: 0;
-}
-#rtc-connection-popout .debug-button {
-    color: #8a8e94;
+.theme-dark .container-2x5lvQ section a {
+    color: var(--main-color);
 }
 
 /* Private Call */
@@ -1106,21 +1105,22 @@ textarea {
     font-weight: bold;
     background: rgba(0,0,0,.2);
     border-radius: 3px;
-    padding: 9px 0;
+    padding: 0;
     margin-top: 9px;
     transform: translate(-50%)scale(0.7);
     transition: 400ms cubic-bezier(.2,0,0,1),max-width 1ms;
     display: none;
     min-width: 10px;
-    left: 45px;
+    left: 30px;
     position: relative;
     flex-basis: auto;
     box-sizing: border-box;
+    height: 20px;
 }
 .members-1998pB:hover .membersGroup-v9BXpm {
     display: block;
     transform: translate(-15px)scale(1);
-    max-width: 195px;
+    max-width: 210px;
 }
 .members-1998pB .image-33JSyf {
     border-radius: 5px;
@@ -2463,52 +2463,48 @@ button.win-close:hover {
 }
 
 /*** Quickswitch ***/
-.theme-dark .quickswitcher-2NdiGJ,
-.theme-light .quickswitcher-2NdiGJ {
+.theme-dark .quickswitcher-3JagVE {
     background: rgba(0,0,0,.9);
     box-shadow: none;
     color:#fff;
 }
-.theme-dark .input-MwQhcX,
-.theme-light .input-MwQhcX {
+.theme-dark .input-2VB9rf {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-.theme-dark .input-MwQhcX,
-.theme-light .input-MwQhcX,
-.theme-dark .tipsMiscControls-2b1XcI .keybind-shortcut:last-of-type:before,
-.theme-light .tipsMiscControls-2b1XcI .keybind-shortcut:last-of-type:before {
-    background: rgba(255,255,255,.15);
+.theme-dark .input-2VB9rf,
+.theme-dark .keybindShortcutTipsSelect-HDyfe8:last-of-type:before {
+    background-color: rgba(255,255,255,.15);
     color: #fff;
 }
-.theme-dark .resultFocused-2geRUA,
-.theme-light .resultFocused-2geRUA {
+.theme-dark .resultFocused-3aIoYe {
     background: var(--hover-color);
 }
-.quickswitcher-2NdiGJ input[type="text"]::-webkit-input-placeholder,
-.resultFocused-2geRUA .contentDefault-EFuBhq,
-.theme-light .resultFocused-2geRUA .contentDefault-EFuBhq,
-.resultFocused-2geRUA .icon-2N00Hg,
-.theme-light .resultFocused-2geRUA .icon-2N00Hg,
-.theme-light .contentUnread-3HdzDL {
+.quickswitcher-3JagVE input[type="text"]::-webkit-input-placeholder,
+.resultFocused-3aIoYe .contentDefault-16dKSY,
+.resultFocused-3aIoYe .icon-30q1Or {
     color:#fff;
 }
-.resultFocused-2geRUA .miscContainer-VFl8ms {
+.theme-dark .contentDefault-16dKSY .note-S--UP5 {
+    opacity: .7;
+}
+.theme-dark .contentUnread-3gTHvA .note-S--UP5 {
+    color: var(--main-color);
+}
+.theme-dark .resultFocused-3aIoYe .contentUnread-3gTHvA .note-S--UP5 {
+    color: #fff;
+}
+.resultFocused-3aIoYe .miscContainer-2ptJ_C {
     opacity:1;
 }
-.scrollerOuter-ppJFBc {
+.scrollerOuter-3FLELE {
     margin-top:0;
 }
-.theme-dark .tipsWithResults-3TVZGE,
-.theme-light .tipsWithResults-3TVZGE{
+.theme-dark .tipsWithResults-HhTE9b {
     border-color: transparent;
+    color: #fff;
 }
-.theme-light .header-1WeC_O {
-    color: #b9bbbe;
-}
-.keybind-shortcut span,
-.keybind-shortcut.dim span,
-.keybind-shortcut.dark span {
+.theme-dark .keybindShortcut-1BD6Z1 span {
     color: #95989d;
     box-shadow: none;
     border-color: transparent;

@@ -423,18 +423,18 @@ body::after {
 }
 .inviteModal-34DdOm .scroller-3__pG8,
 .theme-dark .contentWrapper-3WC1ID {
-	background: rgba(0,0,0,.75);
+    background: rgba(0,0,0,.75);
 }
 .inviteModal-34DdOm .avatar-xxxlarge {
-	background-color: transparent;
-	border-radius: 3px;
+    background-color: transparent;
+    border-radius: 3px;
 }
 .inviteModal-34DdOm .inviteTitle-2-D7Bk {
-	color: var(--main-color);
+    color: var(--main-color);
 }
 .inviteModal-34DdOm .inviteBody-1Y3j7y,
 .subTitle-3TUjmF {
-	color: #fff
+    color: #fff
 }
 .lookLink-9FtZy-.colorBrand-3pXr91 {
     color: #ddd;
@@ -600,32 +600,29 @@ body::after {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-.chat .message-group {
+.chat .containerCozy-jafyvG {
     padding: 10px 0;
+    margin-bottom: 0;
 }
-.avatar-large {
+.large-3ChYtB {
     left: 8px;
     border-radius: 5px;
 }
 /* Timestamp */
-.chat>.content .messages .message-group h2 span.timestamp {
+.chat .timestampCozy-2hLAPV {
     color: rgba(255,255,255,.5)
 }
-.chat>.content .messages .message-group:hover h2 span.timestamp {
-    color: rgba(255, 255, 255, 0.7) !important;
+.chat .containerCozy-jafyvG:hover .timestampCozy-2hLAPV {
+    color: rgba(255, 255, 255, 0.7);
 }
-.message-group .message .markup:not(.spoiler) {
-    color: rgba(255,255,255,.7) !important;
-}
-.message-group.compact .message .markup .user-name::after {
+.containerCompact-3V0ioj .username-_4ZSMR::after {
     content: ":";
 }
-.theme-dark .message-group:not(.has-divider),
-.message-group:not(.has-divider) {
+.theme-dark .containerCozy-jafyvG .divider-32i8lo {
     border-bottom: none;
 }
 .theme-dark .chat .new-messages-bar {
-    height:30px;
+    height: 30px;
     background-color: var(--main-color);
     color: #fff;
 }
@@ -643,8 +640,11 @@ body::after {
     background: rgba(0,0,0,.5);
     color: var(--main-color)
 }
-.chat .jump-to-present-bar:hover {
-    background-color: var(--hover-color) !important;
+.theme-dark .chat .jump-to-present-bar:hover {
+    background-color: var(--hover-color);
+}
+.theme-dark .chat .jump-to-present-bar:hover button {
+    color: #fff;
 }
 /* Code */
 .theme-dark .markup-2BOw-j code.inline,
@@ -700,12 +700,11 @@ body::after {
     border-right-width: 0;
     opacity: 1;
 }
-.theme-dark .messages-wrapper .messages .message-group-blocked.revealed,
-.theme-light .messages-wrapper .messages .message-group-blocked.revealed {
+.theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
     background: rgba(255,255,255,.03);
 }
 .message-group-blocked.revealed .message-group {
-    padding: 10px 0 ;
+    padding: 10px 0;
 }
 /* SYSTEM MESSAGE */
 .system-message {
@@ -724,11 +723,10 @@ body::after {
     background-color: transparent;
     border-top: none;
 }
-.small-popout-box {
+.theme-dark .container-3cGP6G {
     background: rgba(0, 0, 0, 0.9);
-    border: 1px solid transparent;
 }
-.option-popout .btn-item:hover {
+.theme-dark .container-3cGP6G button:hover {
     color: #fff;
     cursor: pointer;
     background-color: var(--hover-color);
@@ -744,45 +742,27 @@ textarea {
 .typing {
     font-size: 11px;
 }
-.chat form .channel-textarea-inner {
-    border:none;
-}
-.theme-dark .channel-textarea-inner,
-.channel-textarea-inner {
+.theme-dark .inner-zqa7da {
     background: rgba(255,255,255,.06);
-    border-radius: 5px;
-}
-.theme-light .inner-3if5cm {
-    background: rgba(255,255,255,.06);
-}
-.theme-light .textArea-20yzAH,
-#app-mount > div > div:nth-child(2) > div.app.flex-vertical.theme-light > div.layers.flex-vertical.flex-spacer > div.layer > section > div.chat.flex-vertical.flex-spacer > div.content.flex-spacer.flex-horizontal > div.flex-spacer.flex-vertical > form > div > div > textarea {
-    color: #ccc;
-}
-.theme-light .attachButtonForeground-3VZiXQ {
-    fill: #fff;
-}
-.theme-dark .attachButton-Di6YUh:hover path,
-.theme-dark .attachButtonPlus-2l1NEU:hover {
-    fill: var(--hover-color);
-}
-.attachButton-Di6YUh {
-    transition: none;
-}
-.theme-dark .attachButtonDivider-3tknGJ {
-    background-color: transparent;
 }
 /* Attachments Button */
-/* maybe delete first one because it's old idk yet */
-.theme-dark .attachPopout-gjwHsr,
+.theme-dark .attachButton-1UjEWA:hover path,
+.theme-dark .attachButtonPlus-rUdX-B:hover {
+    fill: var(--hover-color);
+}
+.attachButton-1UjEWA,
+.attachButtonPlus-rUdX-B {
+    transition: none;
+}
+.theme-dark .attachButtonDivider-3Glu60 {
+    background-color: transparent;
+}
 .theme-dark .attachPopout-1n-ZKM {
     background: rgba(0, 0, 0, .9);
 }
-.theme-dark .attachPopoutRow-elxASe,
 .theme-dark .attachPopoutRow-KrE-f6 {
     transition:none;
 }
-.theme-dark .attachPopoutRow-elxASe:hover,
 .theme-dark .attachPopoutRow-KrE-f6:hover {
     background-color: var(--hover-color);
 }
@@ -790,45 +770,28 @@ textarea {
     color: var(--main-color);
 }
 /* New Messages/Date Divider */
+.theme-dark .friends-table .messages .divider.divider-red>div,
+.theme-dark .messages-wrapper .messages .divider.divider-red>div {
+    background: var(--main-color);
+    opacity: 1;
+}
 .messages .divider-red + .divider {
     margin-top: 30px;
 }
-.theme-dark .friends-table .messages .divider:not(.red) span,
-.theme-dark .messages-wrapper .messages .divider:not(.red) span {
-    color: #fff;
-}
-.chat .divider>span {
+.theme-dark .friends-table .messages .divider.divider-red>span,
+.theme-dark .messages-wrapper .messages .divider.divider-red>span {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 10px;
 }
-.chat .divider>span {
-    border-radius: 0;
-}
-.theme-dark .friends-table .messages .divider span,
 .theme-dark .friends-table .messages .divider:before,
-.theme-dark .messages-wrapper .messages .divider span,
+.theme-dark .friends-table .messages .divider span,
 .theme-dark .messages-wrapper .messages .divider:before,
-.chat .divider {
-    background-color: transparent;
-}
-.theme-dark .friends-table .messages .divider:not(.red) div,
-.theme-dark .messages-wrapper .messages .divider:not(.red) div {
-    background: var(--main-color);
-    opacity: 1;
-}
-/* Server Invite Link Button */
-.invite-button {
-    background-color: rgba(0, 0, 0, 0.54) !important;
-    border-color: rgba(0, 0, 0, 0.1) !important;
-}
-.invite-button-icon.join {
-    background: rgba(255,255,255,.15);
-    border: transparent;
-}
+.theme-dark .messages-wrapper .messages .divider span {background-color: transparent;}
+
 /* Spoiler */
 .spoiler {
-    Background-color: rgba(100,100,100,.3);
+    background-color: rgba(100,100,100,.3);
     border: 1px solid;
     border-color: transparent;
     border-radius:6px;
@@ -847,16 +810,15 @@ textarea {
     color:#f0f0f0!important;
     border-radius:6px 6px 0 0;
 }
-
 .spoiler:hover {
-    color: #fff!important;
+    color: #fff;
 }
 
 /* Drag and Drop Upload */
-.uploadModalIn-14sS7w .uploadDropModal-BpFgz7 .bgScale-1i4Cp3 {
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
     background: var(--main-color);
 }
-.uploadModalIn-14sS7w .uploadDropModal-BpFgz7 .inner-3nWsbo .instructions-KnejBP {
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo .instructions-2Du9gG {
     color: #eee;
 }
 .uploadModal-2ifh8j {
@@ -912,23 +874,7 @@ textarea {
     background-color: var(--main-color) !important;
 }
 /* Horizontal Embeds */
-/*.message-group .accessory{
-    display: flex;
-    flex-flow: row wrap;
-}
-.message-group .accessory>*:not(:last-of-type){
-    margin-right:10px;
-}
-.message-group .accessory>*{
-    margin-top:5px;
-}
-.reactions{
-    width:100%;
-    flex:100%;
-    order:9999999999;
-}*/
 .containerCozy-B4noqO{
-    display: flex;
     flex-flow: row wrap;
 }
 .containerCozy-B4noqO>*:not(:last-of-type){
@@ -968,40 +914,28 @@ textarea {
 }
 
 /* @'s already mentioned */
-.theme-dark .message-group .comment .markup .mention,
-.mention {
-    color: var(--hover-color);
+.theme-dark .wrapper-3WhCwL {
+    color: var(--main-color);
     padding: 0 4px;
     border-radius: 6px;
-    background-color: transparent;
     font-weight: 900;
 }
-.theme-dark .message-group .comment .markup .mention:hover,
-.mention:hover,
-.chat>.content .messages .message-group .mentioned .markup .mention:hover {
+.theme-dark .isMentioned-N-h9aa .mention:hover {
     color: #fff;
     background-color: var(--hover-color) !important;
 }
-.message-group .mentioned .message-text::after {
+.isMentionedCozy-3isp7y:after {
     background: rgba(100, 100, 100, .3);
     border-left: 4px solid var(--main-color);
 }
-.chat>.content .messages .message-group .mentioned .markup .mention {
-    color: var(--hover-color);
-}
-.chat>.content .messages .message-group .mentioned .markup .mention:hover {
-    background: transparent !important;
-}
-.message-group .mentioned .message-text {
-    background-color: rgba(100,100,100,.3) !important;
+.theme-dark .isMentioned-N-h9aa {
+    background: rgba(100, 100, 100, .3);
 }
 /* Links */
-.chat>.content .messages .message-group a,
-.theme-dark .chat>.content .messages .message-group a,
-.theme-dark .message-group a {
+.theme-dark .markup-2BOw-j a {
     color: var(--main-color);
 }
-/* Failed message */
+/* Failed message fix later */
 .theme-dark .message-group .comment .message-send-failed .markup,
 .theme-dark .message-group .comment .message-send-failed a {
     color: #f04747 !important;
@@ -1066,8 +1000,6 @@ textarea {
     -webkit-filter: invert(90%);
 }
 
-/* Emoji Sizes are at the top of this file */
-
 /* Reactions */
 .reaction {
     padding: 0 3px;
@@ -1087,7 +1019,8 @@ textarea {
     background-color: transparent;
 }
 /*** NSFW ***/
-.flex-lFgbSz.flex-1O1GKY.horizontal-2BEEBe.horizontal-2EEEnY.flex-3B1Tl4.directionRow-3v3tfG.justifyCenter-29N31w.alignStretch-1hwxMa.noWrap-v6g9vO{
+.flex-lFgbSz.flex-1O1GKY.horizontal-2BEEBe.horizontal-2EEEnY.flex-3B1Tl4.directionRow-3v3tfG.justifyCenter-29N31w.alignStretch-1hwxMa.noWrap-v6g9vO,
+.flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyCenter-3D2jYp.alignStretch-DpGPf3.noWrap-3jynv6 {
     background: rgba(0,0,0,.75);
 }
 
@@ -1444,47 +1377,37 @@ textarea {
 .theme-dark .messagesPopoutWrap-1MQ1bW .footer-1kmXd4 {
     background-color: rgba(0, 0, 0, .3);
 }
-.popout .themedPopout-25DgLi .header-SsaQ8X .title,
-.recent-mentions-popout .header-SsaQ8X .tab-bar-item.selected,
-.messages-popout .channel-separator .guild-name {
+.theme-dark .headerTabBarWrapper-27xBDe .tab-bar.TOP .tab-bar-item.selected,
+.theme-dark .guildName-1Bc3Ta {
     color: var(--main-color);
 }
-.recent-mentions-popout .header-SsaQ8X .tab-bar-item.selected {
+.theme-dark .headerTabBarWrapper-27xBDe .tab-bar.TOP .tab-bar-item.selected {
     border-bottom-color: var(--main-color);
 }
-.recent-mentions-popout .header-SsaQ8X .tab-bar-item {
+.theme-dark .headerTabBarWrapper-27xBDe .tab-bar.TOP .tab-bar-item,
+.theme-dark .mentionFilter-1PQ6ey .label-12YslM {
     color: #87909c;
 }
-.recent-mentions-popout .tab-bar.TOP .tab-bar-item:hover {
+.theme-dark .headerTabBarWrapper-27xBDe .tab-bar.TOP .tab-bar-item:hover {
+    color: var(--hover-color);
     border-bottom: 2px solid var(--hover-color);
 }
-.messages-popout .channel-separator .channel-name,
-.recent-mentions-popout .header-SsaQ8X .mention-filter .value {
+.theme-dark .channelName-3kBz6H,
+.theme-dark .mentionFilter-1PQ6ey .value-2k8Drt {
     color: #fff;
 }
-.recent-mentions-popout .mention-filter .label {
-    color: hsla(0,0%,100%,.3);
-}
-
-.messages-popout-wrap .messages-popout .message-group {
-    background-color: transparent !important;
-    border: none !important;
-    border-bottom: solid 1px hsla(0, 0%, 100%, .04) !important;
-    border-radius: 0px;
-}
-.messages-popout-wrap .messages-popout .message-group:last-of-type {
-    border-bottom: none !important;
-}
-.messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group:hover .actionButtons-1sUUug {
-    background-color: transparent !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group {
-    background-color: rgba(255,255,255,.07);
+.theme-dark .messageGroupWrapper-o-Zw7G {
+    background-color: transparent;
     border: 0;
+    border-bottom: solid 1px hsla(0, 0%, 100%, .04);
+    border-radius: 0;
 }
-.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group .actionButtons-1sUUug .jumpButton-3DTcS_ {
+.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.theme-dark .messagesPopoutWrap-1MQ1bW .actionButtons-1sUUug .jumpButton-3DTcS_ {
     color: #fff;
     background-color: var(--main-color);
 }
@@ -2750,12 +2673,10 @@ span#pubslayerroot .sidebar-region .scroller-wrap{
     opacity: .2;
 }
 
-
-
 /* Twitter Fullscreen */
 iframe[src*="https://twitter.com"] {
-	width: auto;
+    width: auto;
 }
 .embedImage-2W1cML {
-	overflow: visible;
+    overflow: visible;
 }

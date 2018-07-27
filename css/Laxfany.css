@@ -771,7 +771,9 @@ textarea {
 }
 /* New Messages/Date Divider */
 .theme-dark .friends-table .messages .divider.divider-red>div,
-.theme-dark .messages-wrapper .messages .divider.divider-red>div {
+.theme-dark .messages-wrapper .messages .divider.divider-red>div,
+.theme-dark .friends-table .messages .divider:not(.red) div,
+.theme-dark .messages-wrapper .messages .divider:not(.red) div {
     background: var(--main-color);
     opacity: 1;
 }
@@ -779,7 +781,9 @@ textarea {
     margin-top: 30px;
 }
 .theme-dark .friends-table .messages .divider.divider-red>span,
-.theme-dark .messages-wrapper .messages .divider.divider-red>span {
+.theme-dark .messages-wrapper .messages .divider.divider-red>span,
+.theme-dark .friends-table .messages .divider:not(.red) span,
+.theme-dark .messages-wrapper .messages .divider:not(.red) span {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 10px;

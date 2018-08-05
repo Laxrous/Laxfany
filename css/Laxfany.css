@@ -686,6 +686,9 @@ body::after {
     margin: 1px;
     border-radius: 3px;
 }*/
+.theme-dark .typing-2GQL18 {
+    background-color: transparent;
+}
 .theme-dark .inner-zqa7da {
     background: rgba(255,255,255,.06);
 }

@@ -554,6 +554,15 @@ body::after {
 .channelNotices-41mJbj .channelNotice-1-XFjC.invite-OjTXrW {
     background: transparent url(/assets/bf625d222187f542b9d7179109422e2c.svg) no-repeat center 20px;
 }
+.channelNotices-41mJbj .channelNotice-1-XFjC.quickswitcher-35bYg4 {
+    background: transparent url(/assets/8fdb69b7684b8e1ecb3fdde909daca41.svg) no-repeat center 35px;
+}
+.channelNotices-41mJbj .channelNotice-1-XFjC .message-3SOT5P .btn-11C5_u {
+    background-color: var(--main-color);
+}
+.channelNotices-41mJbj .channelNotice-1-XFjC .message-3SOT5P .btn-11C5_u:hover {
+    background-color: var(--hover-color);
+}
 
 /********* Chat *********/
 /* Header */
@@ -862,9 +871,9 @@ body::after {
     border-radius: 6px;
     font-weight: 900;
 }
-.theme-dark .isMentioned-N-h9aa .mention:hover {
+.theme-dark .wrapperHover-1GktnT:hover {
     color: #fff;
-    background-color: var(--hover-color) !important;
+    background-color: var(--hover-color);
 }
 .isMentionedCozy-3isp7y:after {
     background: rgba(100, 100, 100, .3);
@@ -874,7 +883,9 @@ body::after {
     background: rgba(100, 100, 100, .3);
 }
 /* Links */
-.theme-dark .markup-2BOw-j a {
+.theme-dark .markup-2BOw-j a,
+.theme-dark .topic-2QX7LI a,
+.content-8biNdB a {
     color: var(--main-color);
 }
 /* Failed message fix later */
@@ -896,6 +907,10 @@ body::after {
     width:100%;
     flex:100%;
     order:9999999999;
+}
+/* Embed */
+.embed-IeVjo6 {
+    max-width: 640px;
 }
 /*** Emoji ***/
 .emoji,
@@ -1314,8 +1329,9 @@ body::after {
     background-color: #f04747;
     color: #fff !important;
 }
-.item-1Yvehc.danger-2dXSTE:hover span {
-    color: #fff;
+.item-1Yvehc.danger-2dXSTE:hover span,
+.item-1Yvehc.brand-3igrJY:hover {
+    color: #fff!important;
 }
 
 
@@ -2161,13 +2177,23 @@ button.win-close:hover {
 .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scroller-2FKFPG::-webkit-scrollbar-thumb,
-.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb,
 .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .theme-light .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb {
     border: 3px solid rgba(0, 0, 0, 0.2);
     background: rgba(255, 255, 255, 0.1);
 }
+
+.theme-dark #friends .scroller-wrap ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.theme-dark #friends .scroller-wrap ::-webkit-scrollbar-track-piece {
+    border-color: transparent;
+    background-color: transparent;
+}
+
 .theme-dark .select-3JqNgs>.Select .Select-menu::-webkit-scrollbar-track-piece,
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-track-piece,
 .bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece,
@@ -2412,9 +2438,10 @@ a,
 .chat-3bRxxu .user-name,
 .chat-3bRxxu .username-wrapper .user-name,
 .chat-3bRxxu .message-group a,
-.chat-3bRxxu .title-wrap .topic a,
+.chat-3bRxxu .topic-2QX7LI a,
+.theme-dark .topic-2QX7LI a,
 #user-profile-modal .guilds .section .connected-account .connected-account-name a,
-.theme-dark .chat-3bRxxu .title-wrap .topic a,
+.theme-dark .chat-3bRxxu .titleWrapper-1l0xT9 .topic-2QX7LI a,
 .markdown-modal a,
 .user-settings-modal a,
 #rtc-connection .voice-connection-channel,
@@ -2436,9 +2463,9 @@ a:hover,
 .chat-3bRxxu .username-wrapper:hover .user-name,
 .chat-3bRxxu .message-group a:hover,
 .chat-3bRxxu > .content .messages .message-group .markup .mention:hover,
-.chat-3bRxxu .title-wrap .topic a:hover,
+.chat-3bRxxu .topic-2QX7LI a:hover,
 #user-profile-modal .guilds .section .connected-account .connected-account-name a:hover,
-.theme-dark .chat-3bRxxu .title-wrap .topic a:hover,
+.theme-dark .chat-3bRxxu .topic a:hover,
 .markdown-modal a:hover,
 .user-settings-modal a:hover,
 #rtc-connection .voice-connection-channel:hover,
@@ -2631,10 +2658,10 @@ span#pubslayerroot .sidebar-region .scroller-wrap{
     opacity: .2;
 }
 
-/* Twitter Fullscreen */
+/* Twitter Fullscreen 
 iframe[src*="https://twitter.com"] {
     width: auto;
 }
 .embedImage-2W1cML {
     overflow: visible;
-}
+}*/

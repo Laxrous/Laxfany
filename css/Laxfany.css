@@ -146,15 +146,9 @@ body::after {
 .theme-dark .guild-1EfMGQ.unread-qLkInr:before {
     background: var(--main-color);
 }
-.theme-dark .guild-1EfMGQ.audio-3vVhBi .guildInner-3DSoA4:after,
-.theme-dark .guild-1EfMGQ.video-15yGu3 .guildInner-3DSoA4:after {
+.theme-dark .guild-1EfMGQ.audio-3vVhBi:after,
+.theme-dark .guild-1EfMGQ.video-15yGu3:after {
     background-color: var(--main-color);
-    border-radius: 0;
-    background-position-x: 6px;
-    background-position-y: 2px;
-    border-bottom-left-radius: 24px;
-    top: 0;
-    right: 0;
 }
 /* Create/Join Server */
 .theme-dark .guildsAdd-21_IdK {
@@ -1805,14 +1799,14 @@ button.win-close:hover {
 }
 
 /**** Settings ****/
-.theme-dark .ui-standard-sidebar-view {
+.theme-dark .standardSidebarView-3F1I7i {
     background: linear-gradient(to right,rgba(0,0,0,.75), rgba(0,0,0,.75)), var(--settings);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.theme-dark .ui-standard-sidebar-view .sidebar-region,
-.theme-dark .ui-standard-sidebar-view .content-region {
+.theme-dark .sidebarRegion-VFTUkN,
+.theme-dark .contentRegion-3nDuYy {
     background: transparent;
 }
 .ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller {

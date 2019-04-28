@@ -37,7 +37,6 @@ body::after {
     background-size: cover;
     z-index: -9999
 }
-.d {color:  #008fff;}
 
 /**/
 #app-mount {background: rgba(0,0,0,.75)}
@@ -368,6 +367,11 @@ body::after {
     border-radius: 0;
 }
 .theme-dark .wrapper-1ucjTd:active .content-3at_AU {background: rgba(255,255,255,.07)}
+.users-i_3-kL,
+.total-3tKGEB {
+    background-color: transparent;
+}
+.total-3tKGEB:after {position: absolute; content:"/"; border: 0}
 
 /* Voice Connection Info Popout */
 /* also role popoput adding */

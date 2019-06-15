@@ -816,6 +816,7 @@ body::after {
     opacity: 0.6;
     -webkit-filter: invert(90%);
 }
+.lightTheme-3LGLQs.container-2XeR5Z,
 .searchBar-2_Yu-C.searchBarLight-1NxoDG .searchBarInner-1_Tg2R {
     background-color: rgba(255,255,255,.15);
     border: 0;
@@ -865,25 +866,29 @@ body::after {
 
 /******* Members List Area ******/
 .membersWrap-2h-GB4 {
-    min-width: 90px;
-    width: 90px;
+    position: absolute;
+    right: 0;
+    height: calc( 100% - 48px);
+    min-width: unset
 }
-.membersWrap-2h-GB4:hover .members-1998pB {
-    overflow-y: scroll;
+.membersWrap-2h-GB4:hover {
+    height: calc( 100% - 148px);
 }
-.members-1998pB {
-    transform: translate(0px);
-    z-index: 100;
-    transition: all 300ms ease;
-    overflow-y: hidden;
+.members-1998pB{
+    max-width: unset;
+    width: 70px;
+    transition: .5s ease
 }
 .members-1998pB:hover {
-    transform:translate(-150px);
+    width: 240px
+}
+.content-yTz4x3 {
+    margin-right: 60px
 }
 .theme-dark .members-1998pB .member-3W1lQa:hover .content-OzHfo4{
     background: rgba(255, 255, 255, 0.07);
 }
-.membersGroup-v9BXpm,
+
 .theme-dark .members-1998pB .membersGroup-v9BXpm {
     color: var(--main-color, var(--defMC));
     text-transform: uppercase;
@@ -892,21 +897,14 @@ body::after {
     background: rgba(0,0,0,.2);
     border-radius: 3px;
     padding: 0;
-    margin-top: 9px;
-    transform: translate(-50%)scale(0.7);
-    transition: 400ms cubic-bezier(.2,0,0,1),max-width 1ms;
+    margin: 5px auto;
     display: none;
     min-width: 10px;
-    left: 30px;
-    position: relative;
-    flex-basis: auto;
-    box-sizing: border-box;
     height: 20px;
 }
 .members-1998pB:hover .membersGroup-v9BXpm {
     display: block;
-    transform: translate(-15px)scale(1);
-    max-width: 210px;
+    max-width: 205px;
 }
 .members-1998pB .image-33JSyf {
     border-radius: 5px;
@@ -919,7 +917,6 @@ body::after {
     font-size: 0;
 }
 .members-1998pB .activity-1IYsbk:before {
-    content: "EZ Clap";
     font-size: 11px;
     margin-left: -35px;
     color: transparent;
@@ -1204,6 +1201,9 @@ body::after {
 
 
 /*** Top Toolbar Buttons ***/
+.theme-dark .children-19S4PO:after {
+    background: transparent;
+}
 .header-toolbar button.active,
 .theme-dark .header-toolbar button.active {
     background-color: transparent;
@@ -1309,8 +1309,10 @@ body::after {
 
 
 /**** Channel Search ****/
-.search.focused .search-bar {
-    border-color: var(--main-color, var(--defMC));
+
+.search-2oPWTC.open-6_Y_aH.focused-31_ccS {
+    border: 1px solid var(--main-color, var(--defMC));
+    border-radius: 3px;
 }
 .theme-dark .container-3ayLPN {
     background-color: rgba(0, 0, 0, .9);
@@ -1544,6 +1546,7 @@ button.win-close:hover {
 .searchBar-6Kv8R2 {
     box-shadow: none;
 }
+.theme-dark .searchBar-3dMhjb,
 .darkTheme-3uETC4.container-2XeR5Z,
 .privateChannels-1nO12o .searchBar-2_Yu-C {
     background: transparent;
@@ -2044,11 +2047,14 @@ button.win-close:hover {
     transform: none !important;
 }
 /* Scroll Bar */
+.scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .scrollerThemed-2oenus.themeGhostHairlineChannels-3G0x9_ .scroller-2FKFPG::-webkit-scrollbar-thumb {
     border: 3px solid rgba(0, 0, 0, 0.2);
     background: rgba(255, 255, 255, 0.1);
 }
+.scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
+
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece,
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb, .scrollerThemed-2oenus.themeGhostHairlineChannels-3G0x9_ .scroller-2FKFPG::-webkit-scrollbar-thumb {
     border: solid transparent;

@@ -62,8 +62,8 @@ body::after {
 .theme-dark .messagesWrapper-3lZDfY {background-color: transparent}
 
 .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ,
-.container-1UB9sr,
-.theme-dark .container-2Thooq,
+.container-1giJp5,
+.theme-dark .container-3baos1,
 .theme-dark .headerBar-UHpsPw {background: transparent}
 
 /* Title Bar*/
@@ -126,7 +126,34 @@ body::after {
     border: 0
 }
 .icon-3s6X1M {padding: 0}
-
+/* Folder */
+.theme-dark .expandedFolderBackground-2sPsd-.collapsed-1GMuSb,
+.theme-dark .expandedFolderBackground-2sPsd-.collapsed-1GMuSb.hover-2ji_A7,
+.theme-dark .folder-21wGz3,
+.theme-dark .folder-21wGz3.hover-2ji_A7
+ {background-color: transparent}
+.theme-dark .expandedFolderBackground-2sPsd- {
+    background-color: rgba(255,255,255,.07);
+}
+.theme-dark .expandedFolderBackground-2sPsd-.hover-2ji_A7 {
+    background-color: rgba(255,255,255,.15);
+}
+.folderIconWrapper-226oVY::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    opacity: 0;
+    transition: all .1s ease-in-out;
+    pointer-events: none;
+    border-radius: 15px
+}
+.theme-dark .folder-21wGz3.hover-2ji_A7 .folderIconWrapper-226oVY::after {
+    opacity: 50;
+}
 /* Create/Join Server */
 .theme-dark .circleIconButton-jET_ig {
     background: transparent;
@@ -238,6 +265,9 @@ body::after {
     box-shadow: none
 }
 .unread-1xRYoj {background-color: var(--main-color, var(--defMC))}
+.channels-Ie2l6A .numberBadge-2s8kKX.base-PmTxvP {
+    border-radius: 5px;
+}
 
 .wrapper-CU3qI5 {
     color: var(--main-color, var(--defMC));
@@ -320,8 +350,9 @@ body::after {
 .lookLink-9FtZy-.colorBrand-3pXr91 {color: #ddd}
 
 /* Account Area */
-.container-2Thooq {height: 50px}
-.container-2Thooq .avatar-3JE4B3 .inner-1W0Bkn {border-radius: 5px}
+
+.container-3baos1 {height: 50px}
+.container-3baos1 .avatar-SmRMf2.wrapper-3t9DeA {border-radius: 5px}
 .accountDetails-3k9g4n .username {color: #fff}
 
 /* Account Buttons */
@@ -331,7 +362,7 @@ body::after {
     border-radius: 3px;
 }
 /* Voice */
-.container-1UB9sr {
+.container-1giJp5 {
     border-bottom: none;
     padding: 0 10px;
 }
@@ -356,6 +387,7 @@ body::after {
     height: 100%;
     z-index: 1;
 }
+.theme-dark .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh,
 .theme-dark .listDefault-2y5Z9D .clickable-23RaYz:hover .content-3xS9Lh {
     background: -webkit-linear-gradient(left, var(--hover-color, var(--defHC)) 4px, var(--hover-color, var(--defHC)) 1px, rgba(255,255,255,.1) 1px, rgba(255,255,255,.1) 85%, transparent);
     border-radius: 0;
@@ -375,7 +407,7 @@ body::after {
 
 /* Voice Connection Info Popout */
 /* also role popoput adding */
-.theme-dark .container-2x5lvQ header {background-color: var(--main-color, var(--defMC))}
+.theme-dark .container-2x5lvQ .header-2C89wJ {background-color: var(--main-color, var(--defMC))}
 .theme-dark .container-2x5lvQ section {background-color: rgba(0, 0, 0, 0.9)}
 .theme-dark .container-2x5lvQ section a {color: var(--main-color, var(--defMC))}
 
@@ -439,10 +471,11 @@ body::after {
     padding: 10px 0;
     margin-bottom: 0;
 }
-.chat-3bRxxu .large-3ChYtB {
-    left: 8px;
-    border-radius: 5px;
-}
+.chat-3bRxxu .avatar-17mtNa foreignObject {mask: none}
+.chat-3bRxxu .avatar-17mtNa foreignObject img {border-radius: 5px}
+
+.avatar-17mtNa {margin:-2px 13px 20px 20px}
+.contentCozy-3XX413{margin-left:73px}
 /* Timestamp */
 .chat-3bRxxu .timestampCozy-2hLAPV {
     color: rgba(255,255,255,.5)
@@ -885,6 +918,9 @@ body::after {
 .content-yTz4x3 {
     margin-right: 60px
 }
+.theme-dark .member-3W1lQa:hover {
+    background-color: rgba(255, 255, 255, 0.07)
+}
 .theme-dark .members-1998pB .member-3W1lQa:hover .content-OzHfo4{
     background: rgba(255, 255, 255, 0.07);
 }
@@ -939,19 +975,13 @@ body::after {
     background: var(--main-color, var(--defMC));
     color: #fff;
 }
-.app {
-    overflow-x: hidden !important;
-}
+.app {overflow-x: hidden !important}
 .members-1998pB .mask-3OgeRz {
     -webkit-mask: none;
     mask: none;
 }
-.members-1998pB .avatar-16XVId.small-5Os1Bb {
-    transform:scale(1.2);
-}
-.members-1998pB:hover .avatar-16XVId.small-5Os1Bb {
-    transform:scale(1);
-}
+.members-1998pB .avatarWrapper-3B0ndJ {transform:scale(1.2)}
+.members-1998pB:hover .avatarWrapper-3B0ndJ {transform:scale(1)}
 
 /**** User Popout ****/
 .roleCircle-3xAZ1j[style*="background-color: rgb(185, 187, 190);"] {
@@ -962,10 +992,8 @@ body::after {
 .role-2irmRk[style*="border-color: rgba(185, 187, 190, 0.6);"] {
     border: 1px solid var(--main-color, var(--defMC)) !important;
 }
-.role-2irmRk svg .fill {
-    fill: #fff
-}
-.roleCircle-3xAZ1j {width: 0;}
+.role-2irmRk svg .fill {fill: #fff}
+.roleCircle-3xAZ1j {width: 0}
 .roleCircle-3xAZ1j::after {
     content: "";
     position: absolute;
@@ -979,7 +1007,7 @@ body::after {
     pointer-events: none;
 }
 .role-2irmRk:hover .roleCircle-3xAZ1j::after {
-    opacity: .20;
+    opacity: .30;
 }
 .role-2irmRk:hover .roleRemoveIcon-2-TeGW {position: absolute;}
 .theme-dark .addButton-pcyyf6 {
@@ -2090,19 +2118,20 @@ button.win-close:hover {
     border-top: 1px solid transparent;
 }
 /* Popout Messages Alert Things/Topics idk */
-.markdown-modal {
+.theme-dark .modal-yWgWj- {
     background-color: rgba(0, 0, 0, 0.9);
     color: #a3a3a3;
 }
-.markdown-modal .markdown-modal-header,
-.markdown-modal .markdown-modal-footer {
+.theme-dark .modal-yWgWj- .header-2tA9Os,
+.theme-dark .modal-yWgWj- .footer-3rDWdC {
     background-color: transparent;
     border: none;
 }
-.markdown-modal strong,
-.markdown-modal a {
+.theme-dark .modal-yWgWj- strong,
+.theme-dark .modal-yWgWj- a {
     color: var(--main-color, var(--defMC));
 }
+/* what is this modal content 
 .modal-content {
     background-color: transparent;
 }
@@ -2114,7 +2143,7 @@ button.win-close:hover {
 }
 .modal-content .form-actions .btn.red:hover {
     background: var(--hover-color, var(--defHC));
-}
+}*/
 .alert.form .form-inner .btn {
     border-color: transparent;
 }
@@ -2242,7 +2271,7 @@ a,
 .theme-dark .topic-2QX7LI a,
 #user-profile-modal .guilds .section .connected-account .connected-account-name a,
 .theme-dark .chat-3bRxxu .titleWrapper-1l0xT9 .topic-2QX7LI a,
-.markdown-modal a,
+.theme-dark .modal-yWgWj- a,
 .user-settings-modal a,
 #rtc-connection .voice-connection-channel,
 #rtc-connection-popout .debug-button,
@@ -2266,7 +2295,7 @@ a:hover,
 .chat-3bRxxu .topic-2QX7LI a:hover,
 #user-profile-modal .guilds .section .connected-account .connected-account-name a:hover,
 .theme-dark .chat-3bRxxu .topic a:hover,
-.markdown-modal a:hover,
+.theme-dark .modal-yWgWj- a:hover,
 .user-settings-modal a:hover,
 #rtc-connection .voice-connection-channel:hover,
 #rtc-connection-popout .debug-button:hover,
@@ -2461,7 +2490,7 @@ span#pubslayerroot .sidebar-region .scroller-wrap{
     white-space: pre;
     opacity: .7;
 }
-.theme-light .container-2Thooq {
+.theme-light .container-3baos1 {
     z-index: 999;
 }
 .theme-light .button-2b6hmh {
@@ -2470,7 +2499,7 @@ span#pubslayerroot .sidebar-region .scroller-wrap{
 .theme-light .iconButtonDefault-2cKx7-.button-2b6hmh {
     background-image: none !important;
 }
-.theme-light .container-2Thooq > div:nth-child(3) > div:nth-child(1) button:after {
+.theme-light .container-3baos1 > div:nth-child(3) > div:nth-child(1) button:after {
     content: "Settings";
     color: #fff;
     position: relative;
@@ -2479,7 +2508,7 @@ span#pubslayerroot .sidebar-region .scroller-wrap{
     width: auto;
     height: auto;
 }
-.theme-light .container-2Thooq > div:nth-child(3) > div:nth-child(2) button:after {
+.theme-light .container-3baos1 > div:nth-child(3) > div:nth-child(2) button:after {
     content: "-->";
     color: #fff;
     position: relative;

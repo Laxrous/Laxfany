@@ -40,9 +40,10 @@ body::after {
 
 
 .appMount-3lHmkl, body, .app-2rEoOp,
-.wrapper-1Rf91z, .scroller-2TZvBN, .container-PNkimc, .panels-j1Uci_, .messages-3amgkR, .members-1998pB, .privateChannels-1nO12o, .activityFeed-1C0EmJ, .gameLibrary-TTDw4Y, .header-39GIC8, .applicationStore-1pNvnv, .itemBackground-2vEldQ, .scroller-1JbKMe, .theme-dark .container-3gCOGc, .theme-dark .pageWrapper-1PgVDX {
+.wrapper-1Rf91z, .scroller-2TZvBN, .container-PNkimc, .panels-j1Uci_, .messages-3amgkR, .members-1998pB, .privateChannels-1nO12o, .activityFeed-1C0EmJ, .gameLibrary-TTDw4Y, .header-39GIC8, .applicationStore-1pNvnv, .itemBackground-2vEldQ, .scroller-1JbKMe, .theme-dark .container-3gCOGc, .theme-dark .pageWrapper-1PgVDX, .bg-h5JY_x {
     background-color: transparent
 }
+.activityPanel-28dQGo {border-bottom: 0}
 .theme-dark .layer-3QrUeG, .sidebar-2K8pFh, .chat-3bRxxu, .container-1r6BKw.themed-ANHk51 {
     background: transparent
 } 
@@ -353,14 +354,15 @@ body::after {
     box-shadow: none;
 }
 .listDefault-2y5Z9D .avatarContainer-2inGBK {margin-left: 13.5px}
-.usernameSpeaking-2xbKKh {
+.usernameSpeaking-2xbKKh  {
     position: absolute;
     padding-top: 14px;
     padding-left: 46px;
     background: -webkit-linear-gradient(left, var(--main-color, var(--defMC)) 4px, var(--main-color, var(--defMC)) 1px, rgba(255,255,255,.1) 1px, rgba(255,255,255,.1) 85%, transparent);
     width: 100%;
-    height: 100%;
+    height: 18px;
     z-index: 1;
+    line-height: 2px;
 }
 .theme-dark .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh,
 .theme-dark .listDefault-2y5Z9D .clickable-23RaYz:hover .content-3xS9Lh {
@@ -909,6 +911,7 @@ body::after {
 .content-yTz4x3 {
     margin-right: 60px
 }
+.content-yTz4x3:before {box-shadow: none}
 .theme-dark .member-3W1lQa:hover {
     background-color: rgba(255, 255, 255, 0.07)
 }
@@ -1026,6 +1029,7 @@ body::after {
 .headerStreaming-2FjmGz,
 .theme-dark .headerNormal-T_seeN,
 .theme-dark .body-3iLsc4,
+.theme-dark .bodyInner-245q0L,
 .theme-dark .footer-1fjuF6 {
     background-color: transparent;
 }

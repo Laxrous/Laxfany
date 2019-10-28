@@ -9,7 +9,7 @@ Edited ver. of ClearVision by Zerthox with SmarterEmbeds by BeardDesign
     --defS: transparent;
     --defMC: #008fff;
     --defHC: #EB53F1;
-    --defE: 30px;
+    --defE: 40px;
     --defBG: center;
     --defHOME: url(https://i.imgur.com/4n2lbUD.png);
 }
@@ -889,36 +889,25 @@ body::after {
 .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyCenter-3D2jYp.alignStretch-DpGPf3.noWrap-3jynv6 {
     background: rgba(0,0,0,.75);
 }
-
 /******* Members List Area ******/
 .membersWrap-2h-GB4 {
-    position: absolute;
-    right: 0;
-    height: calc( 100% - 48px);
-    min-width: unset
+    min-width: 70px;
+    transition: all 300ms ease;
+}
+.membersWrap-2h-GB4 .scrollerWrap-2lJEkd.firefoxFixScrollFlex-cnI2ix.scrollerThemed-2oenus.themeGhostHairline-DBD-2d.scrollerFade-1Ijw5y {
+    width: 0;
 }
 .membersWrap-2h-GB4:hover {
-    height: calc( 100% - 148px);
+    min-width: 260px;
 }
-.members-1998pB{
-    max-width: unset;
-    width: 70px;
-    transition: .5s ease
+.membersWrap-2h-GB4:hover .members-1998pB {
+    overflow-y: scroll;
 }
-.members-1998pB:hover {
-    width: 240px
+.members-1998pB {
+    z-index: 100;
+    transition: all 300ms ease;
+    margin: 0;
 }
-.content-yTz4x3 {
-    margin-right: 60px
-}
-.content-yTz4x3:before {box-shadow: none}
-.theme-dark .member-3W1lQa:hover {
-    background-color: rgba(255, 255, 255, 0.07)
-}
-.theme-dark .members-1998pB .member-3W1lQa:hover .content-OzHfo4{
-    background: rgba(255, 255, 255, 0.07);
-}
-
 .theme-dark .members-1998pB .membersGroup-v9BXpm {
     color: var(--main-color, var(--defMC));
     text-transform: uppercase;
@@ -929,53 +918,47 @@ body::after {
     padding: 0;
     margin: 5px auto;
     display: none;
-    min-width: 10px;
+    position: relative;
     height: 20px;
 }
-.members-1998pB:hover .membersGroup-v9BXpm {
+.membersWrap-2h-GB4:hover .membersGroup-v9BXpm {
     display: block;
-    max-width: 205px;
-}
-.members-1998pB .image-33JSyf {
-    border-radius: 5px;
 }
 .members-1998pB .username-1cB_5E {
     font-size: 14px;
 }
-.members-1998pB .activity-1IYsbk {
+.members-1998pB .activity-3mKQ-i .text-16xCj0 {
     overflow: visible;
     font-size: 0;
 }
-.members-1998pB .activity-1IYsbk:before {
+.members-1998pB .activity-3mKQ-i .text-16xCj0:before {
+    content: "";
     font-size: 11px;
-    margin-left: -35px;
     color: transparent;
 }
-.members-1998pB .activity-1IYsbk strong {
+.members-1998pB .activity-3mKQ-i .text-16xCj0 span,
+.members-1998pB .activity-3mKQ-i .text-16xCj0 strong {
     font-weight: 600;
     font-size: 11px;
     color: #fff;
 }
-.members-1998pB .activity-1IYsbk,
-.members-1998pB .memberInner-2CPc3V {
+.members-1998pB .activity-3mKQ-i .text-16xCj0 .customStatusEmoji-2ULxnj {
+    width: 18px;
+    height: 18px;
+}
+.members-1998pB .activity-3mKQ-i .text-16xCj0,
+.members-1998pB .content-3QAtGj {
     opacity: 0;
     transition: all 100ms ease;
 }
-.members-1998pB:hover .activity-1IYsbk,
-.members-1998pB:hover .memberInner-2CPc3V{
+.membersWrap-2h-GB4:hover .activity-3mKQ-i .text-16xCj0,
+.membersWrap-2h-GB4:hover .content-3QAtGj{
     opacity:1;
 }
-.botTagRegular-2HEhHi, .botTagInvert-18-95s {
-    background: var(--main-color, var(--defMC));
+.botTag-3W9SuW {
+    background: var(--main-color);
     color: #fff;
 }
-.app {overflow-x: hidden !important}
-.members-1998pB .mask-3OgeRz {
-    -webkit-mask: none;
-    mask: none;
-}
-.members-1998pB .avatarWrapper-3B0ndJ {transform:scale(1.2)}
-.members-1998pB:hover .avatarWrapper-3B0ndJ {transform:scale(1)}
 
 /**** User Popout ****/
 .roleCircle-3xAZ1j[style*="background-color: rgb(185, 187, 190);"] {
@@ -991,9 +974,9 @@ body::after {
 .roleCircle-3xAZ1j::after {
     content: "";
     position: absolute;
-    top: -1px;
+    top: -200px;
     right: -1px;
-    bottom: -1px;
+    bottom: -100px;
     left: -1px;
     background: inherit;
     opacity: 0;
@@ -1023,6 +1006,7 @@ body::after {
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: none
 }
 .headerPlaying-j0WQBV,
 .headerSpotify-zpWxgT,
@@ -1047,6 +1031,9 @@ body::after {
     border-color: transparent;
     background-color: rgba(255,255,255,.07);
     color: #fff;
+}
+.note-3kmerW textarea:focus {
+    background-color: rgba(255,255,255,.07);
 }
 .body-3iLsc4 .marginBottom8-AtZOdT {
     margin-bottom:10px;
@@ -1190,7 +1177,7 @@ body::after {
 
 
 /*** Right Clicking User / Context Menu ***/
-.theme-dark.contextMenu-HLZMGh {
+.theme-dark .contextMenu-HLZMGh {
     background: rgba(0, 0, 0, 0.9);
     cursor: pointer;
 }

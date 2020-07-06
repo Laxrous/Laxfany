@@ -1,7 +1,4 @@
-/*****************************************************************************
-Laxfany - SNSD Theme by Laxr
-Edited ver. of ClearVision by Zerthox with SmarterEmbeds by BeardDesign
-*****************************************************************************/
+//META{"name":"Laxfany Dev","website":"https://discord.gg/ynaqc8s","description":"A transparent theme for the SNSD fam. Edited ver of ClearVision by Zerthox | Links: https://discord.gg/JTcF2M5 - SNSD Server | https://goo.gl/5J7vyV - SNSD Variety Index | https://discord.gg/ynaqc8s - Lax's Super Secret Pic Server","author":"Laxr","version":"3"}*//
 :root {
     --defB: none;
     --defUP: url(https://i.imgur.com/eIGtoq7.jpg);
@@ -12,6 +9,30 @@ Edited ver. of ClearVision by Zerthox with SmarterEmbeds by BeardDesign
     --defE: 40px;
     --defBG: center;
     --defHOME: url(https://i.imgur.com/4n2lbUD.png);
+}
+:root {
+    /* Colors */
+    --main-color: #cf669c;
+    --hover-color: #6699ff;
+    
+    /* Pictures */
+    --background: url(https://i.imgur.com/9GOU8nW.png);
+    --user-popout: url(https://i.imgur.com/eIGtoq7.jpg);
+    --profile: url(https://i.imgur.com/Nr9mICC.jpg);
+    /* If you need Images, check my server pins for presets */
+
+    /* Main Background Position */
+    --background-position: top;
+
+    /* Emoji Size */
+    --emoji-size: 40px;
+}
+:root {
+    --background: url(https://pbs.twimg.com/media/EAFlqqsXoAE1DuT?format=jpg&name=orig);
+    --background-position: center 1720px;
+    --main-color: #ffac30;
+    --hover-color: #Ff0000;
+    --background: transparent;
 }
 body::after,
 #pubs-container::before,
@@ -40,7 +61,7 @@ body::after {
 
 
 .appMount-3lHmkl, body, .app-2rEoOp,
-.wrapper-1Rf91z, .scroller-2TZvBN, .container-PNkimc, .panels-j1Uci_, .messages-3amgkR, .members-1998pB, .privateChannels-1nO12o, .activityFeed-1C0EmJ, .gameLibrary-TTDw4Y, .header-39GIC8, .applicationStore-1pNvnv, .itemBackground-2vEldQ, .scroller-1JbKMe, .theme-dark .container-3gCOGc, .theme-dark .pageWrapper-1PgVDX, .bg-h5JY_x {
+.wrapper-1Rf91z, .scroller-2TZvBN, .container-PNkimc, .panels-j1Uci_, .messages-3amgkR, .members-1998pB, .members-1998pB>div, .privateChannels-1nO12o, .activityFeed-1C0EmJ, .gameLibrary-TTDw4Y, .header-39GIC8, .applicationStore-1pNvnv, .itemBackground-2vEldQ, .scroller-1JbKMe, .theme-dark .container-3gCOGc, .theme-dark .pageWrapper-1PgVDX, .bg-h5JY_x {
     background-color: transparent
 }
 .activityPanel-28dQGo {border-bottom: 0}
@@ -59,6 +80,7 @@ body::after {
 .theme-dark .tooltipBlack-PPG47z .tooltipPointer-3ZfirK {
     border-top-color: var(--main-color, var(--defMC))
 }
+.theme-dark .tooltip-2QfLtc, .theme-light .tooltip-2QfLtc,
 .theme-dark .activityIcon-c4ew_N {color: #fff;}
 
 /***** Server List *****/
@@ -568,19 +590,19 @@ body::after {
 .form-2fGMdU {margin-top: 8px}
 .theme-dark .typing-2GQL18,
 .channelTextArea-rNsIhG {background-color: transparent}
-.form-2fGMdU:before {background: transparent}
+.theme-dark .form-2fGMdU:before {background: transparent}
 .scrollableContainer-2NUZem {
     background-color: rgba(255,255,255,.06);
 }
-/* Message options */
-.theme-dark .container-3cGP6G {
+/* Message options / Right Click Menu */
+.styleFlexible-wGDiIL,
+.submenu-2-ysNh {
     background: rgba(0, 0, 0, 0.9);
 }
-.theme-dark .container-3cGP6G button:hover {
+.styleFlexible-wGDiIL .focused-3afm-j {
     color: #fff;
     cursor: pointer;
     background-color: var(--hover-color, var(--defHC));
-    margin: 1px;
     border-radius: 3px;
 }
 /* Attachments Button */
@@ -696,6 +718,7 @@ body::after {
 .theme-brand .inner-zqa7da {
     background-color: rgba(255,255,255,.1);
 }
+.attachment-33OFj0,
 .theme-dark .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j {
     background-color: transparent;
     border-color: var(--main-color, var(--defMC));
@@ -809,56 +832,32 @@ body::after {
     vertical-align: bottom;
 }
 /* Emoji Picker */
-#bda-qem,
-#bda-qem button,
-.emojiPicker-3m1S-j .dimmer-3iH-5D.visible-3k45bQ,
-.emojiPicker-3m1S-j .searchBar-2_Yu-C.searchBarLight-1NxoDG,
-.infoBar-U6oBFk,
-.emojiPicker-3m1S-j .categories-1feg4n {
+.contentWrapper-SvZHNd,
+.wrapper-1-Fsb8,
+.inspector-sdLnLS,
+.wrapper-2Gsate,
+.emojiPicker-3PwZFl {
     background: rgba(0,0,0,.9);
 }
-#bda-qem button {
-    border: none;
-    box-shadow: none;
-    color: #fff;
-}
-#bda-qem button.active {
+.navButtonActive-1MkytQ {
     background-color: var(--main-color, var(--defMC));
 }
-#bda-qem button:hover {
-    background-color: var(--hover-color, var(--defHC));
-}
-.emojiPicker-3m1S-j, #bda-qem-twitch-container, #bda-qem-favourite-container {
-    background-color: rgba(0,0,0,.8);
-    border: none;
-}
-.emojiPicker-3m1S-j .stickyHeader-1SS0JU { display: none; }
-.emojiPicker-3m1S-j .category-2U57w6 {
-    text-align: center;
-    color: var(--main-color, var(--defMC));
-    font-size: 11px;
-    font-weight: 700;
-    line-height: 21px;
-    text-transform: uppercase;
-    letter-spacing: .08em;
-}
-.diversitySelector-tmmMv0 .popout-2nUePc {
+.diversitySelectorPopout-3FiGaM {
     background: rgba(0,0,0,.7);
     border: none;
     box-shadow: none;
 }
-.emote-container:hover,
-.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.selected-39BZ4S {
+.emojiItem-14v6tW.emojiItemSelected-1aLkfV,
+.categoryItemDefaultCategorySelected-_HCKoz,
+.categoryItemDefaultCategorySelected-_HCKoz:hover {
     background-color: var(--main-color, var(--defMC));
-    border-radius: 5px;
 }
-.emojiPicker-3m1S-j .no-search-results .sad-discord {
-    opacity: 0.6;
-    -webkit-filter: invert(90%);
-}
-.container-2XeR5Z {
-    background-color: rgba(50,50,50,.3)
-}
+
+
+
+
+
+
 /* Gif Picker */
 .container-cMG81i {
     background-color: rgba(50,50,50,.3);
@@ -897,12 +896,15 @@ body::after {
     min-width: 70px;
     transition: all 300ms ease;
 }
+.members-1998pB {
+	width: 70px;
+}
 .membersWrap-2h-GB4 .scrollerWrap-2lJEkd.scrollerThemed-2oenus.themeGhostHairline-DBD-2d,
 .membersWrap-2h-GB4 .scrollerWrap-2lJEkd.firefoxFixScrollFlex-cnI2ix.scrollerThemed-2oenus.themeGhostHairline-DBD-2d {
     width: 0;
 }
 .membersWrap-2h-GB4:hover {min-width: 260px}
-.membersWrap-2h-GB4:hover .members-1998pB {overflow-y: scroll}
+.membersWrap-2h-GB4:hover .members-1998pB {overflow-y: scroll; width: 240px;}
 .members-1998pB {
     z-index: 100;
     transition: all 300ms ease;
@@ -1228,6 +1230,16 @@ body::after {
 .theme-dark .messagesPopoutWrap-1MQ1bW .footer-1kmXd4 {
     background-color: rgba(0, 0, 0, .3);
 }
+.channelHeader-3Gd2xq {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background-color: rgba(0, 0, 0, .85);
+}
+.messageContainer-gbhlwo {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	background-color: rgba(255,255,255,.07)
+}
 .theme-dark .headerTabBarWrapper-27xBDe .tab-bar.TOP .tab-bar-item.selected,
 .theme-dark .guildName-1Bc3Ta {
     color: var(--main-color, var(--defMC));
@@ -1316,11 +1328,49 @@ body::after {
 
 
 /**** Channel Search ****/
-
+.searchResultsWrap-3-pOjs {
+    background-color: rgba(0,0,0,.9);
+}
+.channelName-wvgELL {
+	background: none
+}
+.searchResultsWrap-3-pOjs .channelSeparator-dTqJ4K:before {
+	border-bottom: 0
+}
+.searchResult-2N9RV4:before {
+	background-image: linear-gradient(0deg,transparent,rgba(0,0,0,.9))
+}
+.searchResultMessage-30QnSN.hit-1CXhXT {
+	background-color: rgba(255,255,255,.07);
+	box-shadow: none;
+	border: 0
+}
+.searchResult-2N9RV4:after {
+	background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.9))
+}
+.searchResult-2N9RV4.expanded-ovgtuV {
+	background-color: rgba(255,255,255,.15);
+}
+.expanded-ovgtuV .searchResultMessage-30QnSN.hit-1CXhXT {
+	background-color: var(--main-color, var(--defMC));
+}
+.expanded-ovgtuV .searchResultMessage-30QnSN.hit-1CXhXT .markup-2BOw-j {
+	color: #fff
+}
+.jumpButton-1ol35X {
+    background-color: var(--main-color, var(--defMC));
+    color: #fff;
+}
+.jumpButton-1ol35X:hover {
+    background-color: var(--hover-color, var(--defHC));
+    color: #fff;
+}
+/*
 .search-2oPWTC.open-6_Y_aH.focused-31_ccS {
     border: 1px solid var(--main-color, var(--defMC));
     border-radius: 3px;
 }
+.searchResultsWrap-3-pOjs,
 .theme-dark .container-3ayLPN {
     background-color: rgba(0, 0, 0, .9);
 }
@@ -1594,7 +1644,7 @@ button.win-close:hover {
     position: absolute;
     height: 42px;
     width: 4px;
-    left: 8px;
+    left: 0px;
     background: var(--main-color, var(--defMC));
 }
 .privateChannels-1nO12o .channel-2QD9_O:not(.selected-aXhQR6):hover:before{
@@ -1602,15 +1652,18 @@ button.win-close:hover {
     position: absolute;
     height: 42px;
     width: 4px;
-    left: 8px;
+    left: 0px;
     background: var(--hover-color, var(--defHC));
 }
 .privateChannels-1nO12o .channel-2QD9_O:hover a,
 .privateChannels-1nO12o .channel-2QD9_O.selected-1HYmZZ a {
     background: -webkit-linear-gradient(left, rgba(255,255,255,.1) 85%, transparent);
 }
-.nameAndDecorators-5FJ2dg {color: #fff;}
 .activityText-OW8WYb strong {color: #ccc;}
+.activity-525YDR .emoji {
+	width: 18px;
+    height: 18px;
+}
 
 
 /*** Store ***/
@@ -1954,12 +2007,14 @@ button.win-close:hover {
     transform: none !important;
 }
 /* Scroll Bar */
+.auto-Ge5KZx::-webkit-scrollbar-thumb,
 .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .scrollerThemed-2oenus.themeGhostHairlineChannels-3G0x9_ .scroller-2FKFPG::-webkit-scrollbar-thumb {
     border: 3px solid rgba(0, 0, 0, 0.2);
     background: rgba(255, 255, 255, 0.1);
 }
+.auto-Ge5KZx::-webkit-scrollbar-track,
 .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece,

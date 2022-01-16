@@ -1,0 +1,15 @@
+.bg-1QIAus {
+    background-color: transparent;
+}
+
+[class*=winButtonMinMax-]:nth-child(2n):hover {
+    background-color: #00CA4E;
+}
+
+[class*=winButtonMinMax-]:nth-child(3n):hover {
+    background-color: #FFBD44;
+}
+
+[class*=winButton-]:hover {
+    color: #fff
+}

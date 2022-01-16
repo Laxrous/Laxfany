@@ -1,0 +1,22 @@
+{
+  "name": "laxfany",
+  "version": "1.0.0",
+  "description": "Laxfany bd theme",
+  "main": "index.js",
+  "author": "Laxr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Laxrous/Laxfany.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Laxrous/Laxfany/issues"
+  },
+  "scripts": {
+    "dev": "sass --watch scss/main.scss ../../data/stable/custom.css",
+    "build": "sass scss/main.scss dist/main.css --style compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.48.0"
+  }
+}

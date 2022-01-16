@@ -1,0 +1,15 @@
+.wrapper-1_HaEi {
+    &,
+    .scroller-3X7KbA,
+    [class*="folder-"] {
+        background: transparent;
+    }
+
+    [class*=expandedFolderBackground-] {
+        background: rgba($color: #fff, $alpha: .07);
+        
+        &:hover {
+            background: rgba($color: #fff, $alpha: .15);
+        }
+    }
+}

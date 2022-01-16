@@ -4,7 +4,6 @@ Used to be An SNSD Theme for BetterDiscord that allows you to change the color, 
 
 
 
-
 ## Old
 #### Special Thanks
 - This theme is an edited version of Zerthox's [ClearVision](https://github.com/Zerthox/ClearVision/). I got impatient waiting for his updates.
